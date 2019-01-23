@@ -1,0 +1,46 @@
+<resources>
+    <string name="app_name">证件照相机</string>
+    <string name="picture">Picture</string>
+    <string name="description_info">Info</string>
+    <string name="request_permission">This sample needs camera permission.</string>
+    <string name="camera_error">This device doesn\'t support Camera2 API.</string>
+    <string name="intro_message">
+        <![CDATA[
+
+
+            This sample demonstrates the basic use of Camera2 API. Check the source code to see how
+            you can display camera preview and take pictures.
+
+
+        ]]>
+    </string>
+    <string name="need_permission_camera">请允许“证件照相机”获取相机相关权限，拒绝将会影响您正常使用。点击“去设置”开启</string>
+    <string name="need_permission_splash">请允许“证件照相机“获取手机相关权限，拒绝将会影响您正常使用。点击“去设置”开启。</string>
+    <string name="download_success">下载成功，请前往系统相册查看</string>
+
+    <string name="error_gif">x or y bound size should be at least %1$dpx and file size should be no more than %2$sM</string>
+
+    <string name="share_uninstall_qq">未安装QQ</string>
+    <string name="share_uninstall_wechat">未安装微信</string>
+    <string name="share_uninstall_weibo">未安装微博</string>
+    <string name="txt_weibo">新浪微博</string>
+    <string name="txt_qzone">QQ空间</string>
+    <string name="txt_weixin_circel">朋友圈</string>
+    <string name="txt_weixin_friend">微信好友</string>
+    <string name="txt_more">更多</string>
+    <string name="txt_qq">QQ</string>
+    <string name="share_weibo">新浪微博</string>
+    <string name="share_qzone">QQ空间</string>
+    <string name="share_weixin_circel">朋友圈</string>
+    <string name="share_weixin_friend">微信好友</string>
+    <string name="share_more">复制链接</string>
+    <string name="share_cancle">取消</string>
+
+    <string name="takepictrue_tips1">请站在白色背景墙前拍摄</string>
+    <string name="takepictrue_tips2">请避免服装颜色和背景墙颜色接近</string>
+    <string name="takepictrue_tips3">请注意摆正头部</string>
+    <string name="takepictrue_tips4">请参考人型辅助线拍摄</string>
+
+    <string name="toast_net_err">网络不给力</string>
+
+</resources>

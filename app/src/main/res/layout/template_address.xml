@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingLeft="15dp"
+    android:paddingRight="15dp"
+    android:paddingTop="10dp"
+    android:paddingBottom="10dp"
+    >
+    <RelativeLayout
+        android:id="@+id/template_address_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/mine_layout_bg"
+        android:paddingTop="14dp"
+        android:paddingBottom="15dp"
+        android:paddingLeft="19dp"
+        android:paddingRight="5dp"
+        >
+
+        <LinearLayout
+            android:id="@+id/layout1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="58dp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            >
+            <TextView
+                android:id="@+id/template_address_name"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:textSize="14sp"
+                android:textColor="@color/white"
+                />
+
+            <TextView
+                android:id="@+id/template_address_mobile"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@id/template_address_name"
+                android:layout_marginLeft="25dp"
+                android:textSize="14sp"
+                android:textColor="@color/white"
+                />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/template_address_address"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/layout1"
+            android:layout_marginTop="15dp"
+            android:layout_marginRight="58dp"
+            android:textSize="14sp"
+            android:textColor="@color/white"
+            />
+
+        <ImageView
+            android:id="@+id/template_address_edit"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:scaleType="center"
+            android:src="@mipmap/edit_address_icon"
+            />
+
+    </RelativeLayout>
+
+</LinearLayout>

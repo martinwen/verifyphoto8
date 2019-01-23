@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:fresco="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center"
+    android:padding="8dp">
+
+    <LinearLayout
+        android:id="@+id/select_size_itemlayout"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:orientation="vertical"
+        android:gravity="center_horizontal"
+        >
+        <com.facebook.drawee.view.SimpleDraweeView
+            android:id="@+id/select_size_item_icon"
+            android:layout_width="25dp"
+            android:layout_height="30dp"
+            android:layout_marginTop="8dp"
+            fresco:actualImageScaleType="fitCenter"
+            />
+
+        <TextView
+            android:id="@+id/select_size_item_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:textColor="#424242"
+            android:textSize="12sp"
+            />
+
+        <TextView
+            android:id="@+id/select_size_item_instruction"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:textColor="#999999"
+            android:textSize="12sp"
+            />
+    </LinearLayout>
+</LinearLayout>

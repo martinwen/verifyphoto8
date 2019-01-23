@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="grid_expected_size">120dp</dimen>
+    <dimen name="pulldown_headerview_height">80dp</dimen>
+    <dimen name="home_title_height">46dp</dimen>
+    <dimen name="header_height">56dp</dimen>
+    <dimen name="footer_height">56dp</dimen>
+    <dimen name="text_size_24">12sp</dimen>
+    <dimen name="text_size_28">14sp</dimen>
+
+</resources>

@@ -1,0 +1,209 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+
+    <!-- 滑动退出-->
+    <declare-styleable name="SwipeBackLayout">
+        <attr name="edge_size" format="dimension" />
+        <attr name="edge_flag">
+            <enum name="left" value="0" />
+            <enum name="right" value="1" />
+            <enum name="bottom" value="2" />
+            <enum name="all" value="3" />
+        </attr>
+        <attr name="shadow_left" format="reference" />
+        <attr name="shadow_right" format="reference" />
+        <attr name="shadow_bottom" format="reference" />
+    </declare-styleable>
+    <attr name="SwipeBackLayoutStyle" format="reference" />
+    <!-- viewpager滑动与否 -->
+    <declare-styleable name="TabViewPager">
+        <attr name="slipEnable" format="boolean" />
+    </declare-styleable>
+    <!--下拉刷新-->
+    <declare-styleable name="SwipeToLoadLayout">
+        <attr name="refresh_enabled" format="boolean" />
+        <attr name="load_more_enabled" format="boolean" />
+
+        <attr name="swipe_style" format="enum">
+            <enum name="classic" value="0" />
+            <enum name="above" value="1" />
+            <enum name="blew" value="2" />
+            <enum name="scale" value="3" />
+        </attr>
+
+        <attr name="drag_ratio" format="float" />
+
+        <attr name="refresh_trigger_offset" format="dimension" />
+        <attr name="load_more_trigger_offset" format="dimension" />
+        <attr name="refresh_final_drag_offset" format="dimension" />
+        <attr name="load_more_final_drag_offset" format="dimension" />
+
+        <attr name="swiping_to_refresh_to_default_scrolling_duration" format="integer" />
+        <attr name="release_to_refreshing_scrolling_duration" format="integer" />
+        <attr name="refresh_complete_delay_duration" format="integer" />
+        <attr name="refresh_complete_to_default_scrolling_duration" format="integer" />
+        <attr name="default_to_refreshing_scrolling_duration" format="integer" />
+        <attr name="swiping_to_load_more_to_default_scrolling_duration" format="integer" />
+        <attr name="release_to_loading_more_scrolling_duration" format="integer" />
+        <attr name="load_more_complete_delay_duration" format="integer" />
+        <attr name="load_more_complete_to_default_scrolling_duration" format="integer" />
+        <attr name="default_to_loading_more_scrolling_duration" format="integer" />
+    </declare-styleable>
+    <declare-styleable name="IndexBar">
+        <attr name="indexSize" format="dimension" />
+        <attr name="letterSize" format="dimension" />
+        <attr name="pressBackground" format="color|reference" />
+    </declare-styleable>
+
+    <declare-styleable name="SearchHotView">
+        <attr name="horSpace" format="dimension" />
+        <attr name="verSpace" format="dimension" />
+        <attr name="backgroud_color" format="color" />
+        <attr name="textcolor" format="color" />
+    </declare-styleable>
+
+    <!--apsts-->
+    <declare-styleable name="AdvancedPagerSlidingTabStrip">
+        <!--导航条的颜色-->
+        <attr name="apTabIndicatorColor" format="color" />
+        <!--Tab底部下划线的颜色-->
+        <attr name="apTabUnderlineColor" format="color" />
+        <!--每个Tab之间的分割线颜色-->
+        <attr name="apTabDividerColor" format="color" />
+        <!--被选中的Tab的文本字体颜色-->
+        <attr name="apTabTextSelectColor" format="color" />
+        <!--导航条的高度-->
+        <attr name="apTabIndicatorHeight" format="dimension" />
+        <!--Tab底部下划线的高度-->
+        <attr name="apTabUnderlineHeight" format="dimension" />
+        <!--Tab分割线的padding-->
+        <attr name="apTabDividerPadding" format="dimension" />
+        <!--每个Tab的左右padding-->
+        <attr name="apTabPaddingLeftRight" format="dimension" />
+        <!--每个Tab的上下padding-->
+        <attr name="apTabPaddingTopBottom" format="dimension" />
+        <!--选中tab的滑动offset-->
+        <attr name="apTabScrollOffset" format="dimension" />
+        <!--tab的背景-->
+        <attr name="apTabBackground" format="reference" />
+        <!--伸缩情况，如果为真，每个tab都是相同的weight，默认是false-->
+        <attr name="apTabShouldExpand" format="boolean" />
+        <!--Tab的文字是否为全部大写，如果是true就全部大写，默认为true-->
+        <attr name="apTabTextAllCaps" format="boolean" />
+        <!--绘制模式，text或者normal，用于是否将下划线绘制为跟随-->
+        <attr name="apTabDrawMode" format="enum">
+            <enum name="normal" value="0" />
+            <enum name="text" value="1" />
+        </attr>
+    </declare-styleable>
+
+    <declare-styleable name="SwitchButton">
+        <attr name="sb_shadow_radius" format="reference|dimension"/>
+        <attr name="sb_shadow_offset" format="reference|dimension"/>
+        <attr name="sb_shadow_color" format="reference|color"/>
+        <attr name="sb_uncheck_color" format="reference|color"/>
+        <attr name="sb_checked_color" format="reference|color"/>
+
+        <attr name="sb_border_width" format="reference|dimension"/>
+        <attr name="sb_checkline_color" format="reference|color"/>
+        <attr name="sb_checkline_width" format="reference|dimension"/>
+        <attr name="sb_uncheckcircle_color" format="reference|color"/>
+        <attr name="sb_uncheckcircle_width" format="reference|dimension"/>
+        <attr name="sb_uncheckcircle_radius" format="reference|dimension"/>
+
+        <attr name="sb_checked" format="reference|boolean"/>
+        <attr name="sb_shadow_effect" format="reference|boolean"/>
+        <attr name="sb_effect_duration" format="reference|integer"/>
+        <attr name="sb_button_color" format="reference|color"/>
+        <attr name="sb_show_indicator" format="reference|boolean"/>
+        <attr name="sb_background" format="reference|color"/>
+        <attr name="sb_enable_effect" format="reference|boolean"/>
+    </declare-styleable>
+
+    <declare-styleable name="ThumbsUpCountView">
+        <attr name="thumbsup_on_drawable" format="reference" />
+        <attr name="thumbsup_off_drawable" format="reference" />
+        <attr name="thumbsup_on_decoration_drawable" format="reference" />
+        <attr name="thumbsup_on_show_circle" format="boolean" />
+        <attr name="thumbsup_on_show_decoration" format="boolean" />
+        <attr name="thumbsup_on_circle_color" format="color" />
+        <attr name="thumbsup_on_text_color" format="color" />
+        <attr name="thumbsup_off_text_color" format="color" />
+        <attr name="thumbsup_text_size" format="dimension" />
+    </declare-styleable>
+
+    <declare-styleable name="CrescentoImageView">
+        <attr name="curvature" format="dimension"/>
+        <attr name="gravity" format="integer">
+            <flag name="top" value="0"/>
+            <flag name="bottom" value="1"/>
+        </attr>
+        <attr name="curvatureDirection" format="integer">
+            <flag name="outward" value="0"/>
+            <flag name="inward" value="1"/>
+        </attr>
+        <attr name="crescentoTintMode" format="integer">
+            <flag name="automatic" value="0"/>
+            <flag name="manual" value="1"/>
+        </attr>
+        <attr name="crescentoTintColor" format="color"/>
+        <attr name="crescentoTintAlpha" format="integer"/>
+        <attr name="gradientDirection" format="integer">
+            <flag name="top_to_bottom" value="0" />
+            <flag name="bottom_to_top" value="1" />
+            <flag name="left_to_right" value="2" />
+            <flag name="right_to_left" value="3" />
+        </attr>
+        <attr name="gradientStartColor" format="color"/>
+        <attr name="gradientEndColor" format="color"/>
+    </declare-styleable>
+
+    <declare-styleable name="zkMode">
+        <attr name="backgroundAttr" format="string|reference" /><!--切换背景属性-->
+        <attr name="textColorAttr" format="string|reference" /><!--切换字体颜色属性-->
+        <attr name="backgroundDrawableAttr" format="string|reference" /><!--切换背景图片属性-->
+        <attr name="resourceAttr" format="string|reference" /><!--切换资源图片图片属性-->
+    </declare-styleable>
+
+    <!--背景-->
+    <attr name="forkbackground" format="color|reference" />
+    <!--圆角背景-->
+    <attr name="forkroundbackground" format="reference" />
+    <!--背景图片-->
+    <attr name="forkbackgroundDrawable" format="reference" />
+    <!--字体颜色-->
+    <attr name="forktextColor" format="color" />
+    <!--列表item背景-->
+    <attr name="forkItemBackground" format="color" />
+    <!--引用图片资源-->
+    <attr name="forkImageSrc" format="reference" />
+
+    <declare-styleable name="ExpandableTextView">
+        <attr name="maxCollapsedLines" format="integer"/>
+        <attr name="animDuration" format="integer"/>
+        <attr name="contentTextSize" format="dimension"/>
+        <attr name="contentTextColor" format="color"/>
+        <attr name="contentLineSpacingMultiplier" format="float"/>
+        <attr name="expandDrawable" format="reference"/>
+        <attr name="expandText" format="string"/>
+        <attr name="collapseDrawable" format="reference"/>
+        <attr name="collapseText" format="string"/>
+        <attr name="expandCollapseTextColor" format="color"/>
+        <attr name="DrawableAndTextGravity">
+            <enum name="left" value="0"/>
+            <enum name="center" value="1"/>
+            <enum name="right" value="2"/>
+        </attr>
+    </declare-styleable>
+
+    <declare-styleable name="easy_flip_view">
+        <attr name="flipOnTouch" format="boolean"/>
+        <attr name="flipDuration" format="integer"/>
+        <attr name="flipType" format="string"/>
+        <attr name="flipFrom" format="string"/>
+        <attr name="flipEnabled" format="boolean"/>
+        <attr name="animFlipInId" format="reference"/>
+        <attr name="animFlipOutId" format="reference"/>
+    </declare-styleable>
+</resources>

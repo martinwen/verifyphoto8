@@ -1,0 +1,271 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#ffffff</color>
+    <color name="colorPrimaryDark">#ffffff</color>
+    <color name="colorAccent">#ffffff</color>
+
+    <color name="activity_back_color">#151723</color>
+
+    <color name="transparent_bg_half_white">#80ffffff</color>
+    <color name="white">#ffffffff</color>
+    <color name="black">#ff000000</color>
+    <color name="red">#ffff0000</color>
+    <color name="transparent_bg">#4D000000</color>
+    <color name="transparent_bg_half">#80000000</color>
+    <color name="transparent">#00000000</color>
+    <color name="transparent_30">#B3000000</color>
+
+    <color name="login_hint">#909090</color>
+
+    <!--订单-->
+    <color name="order_status_close">#909090</color>
+    <color name="order_status">#64A552</color>
+
+
+
+
+    <!-- dialog -->
+    <color name="dialog_title_bg_color">#2ab8a2</color>
+    <color name="dialog_cancel_btn_color">#FFC9C9C9</color>
+    <color name="dialog_title_font_color">#FFFFFFFF</color>
+    <color name="dialog_content_font_color">#666666</color>
+    <color name="dialog_icon_bg">#f6f7f7</color>
+
+
+    <color name="dialog_system_title">#333333</color>
+    <color name="dialog_system_content">#666666</color>
+    <color name="dialog_system_cancel">#333333</color>
+    <color name="dialog_system_ok">#3cb2a2</color>
+
+
+
+
+
+
+    <color name="content_text_color_night">#FFB6B6B6</color>
+    <!--刷新头文字颜色-->
+    <color name="header_textcolor_day">#999999</color>
+    <color name="header_textcolor_night">#767676</color>
+
+    <color name="search_rb_line_background">#E674E1C2</color>
+    <color name="search_rb_background">#ffffff</color>
+    <color name="search_rb_background_def">#999999</color>
+
+    <color name="search_rb_line_background_night">#2ab8a2</color>
+    <color name="search_rb_background_night">#ffffff</color>
+    <color name="search_rb_background_def_night">#6e6e6e</color>
+    <!--<color name="home_tabhost_top_line">#ffffff</color>-->
+    <color name="home_tabhost_top_line_day">#ffffff</color>
+    <color name="home_tabhost_top_line_night">#222222</color>
+    <color name="recycleview_background">#efefef</color>
+    <color name="tv_content">#a4a4a4</color>
+
+    <!--列表点击色值-->
+    <color name="list_item">#ffffff</color>
+    <color name="list_item_press">#eaeaea</color>
+    <color name="list_press_bg_night">#212121</color>
+    <color name="list_item_night">#414141</color>
+
+
+    <color name="list_title_txt_color_push">#A4A4A4</color>
+    <color name="list_title_txt_color_push_night">#ababab</color>
+
+    <color name="content_bg">#FFF6F6F6</color>
+    <color name="content_bg_night">#292929</color>
+
+    <!--登录-->
+    <color name="login_interval_hor">#e2e2e2</color>
+    <color name="login_button_unclick">#cccccc</color>
+    <color name="login_button_unclick_night">#31312f</color>
+    <color name="login_button_click">#3ec9b4</color>
+    <color name="login_button_click_night">#00ac95</color>
+
+    <color name="login_verifica_code">#2AB8A2</color>
+    <color name="login_verifica_text_day">#666666</color>
+    <color name="login_verifica_text_night">#eaeaea</color>
+
+    <color name="login_edittext">#727272</color>
+
+    <color name="login_bg_day">#ffffff</color>
+    <color name="login_bg_night">#1e1e1e</color>
+
+
+
+    <!-- H5浏览器 -->
+    <color name="webview_progress_color">#FF018cb4</color>
+
+
+    <!-- list 背景颜色 -->
+    <color name="list_bg">#ffffff</color>
+    <color name="list_bg_night">#FF3F3F3F</color>
+    <color name="share_bg_day">#F7F7F7</color>
+    <!--列表item-->
+    <color name="list_color_day">#ffffff</color>
+    <color name="list_color_night">#414141</color>
+
+    <color name="list_item_viewline_color_day">#f7f7f6</color>
+    <color name="list_item_viewline_color_night">#343535</color>
+
+    <color name="list_item_view_line_color_day">#ebeae7</color>
+    <color name="list_item_view_line_color_night">#666460</color>
+
+    <color name="list_item_big_time_color_day">#abb6ae</color>
+
+    <color name="list_item_small_title_color_day">#333333</color>
+    <color name="list_item_small_time_color_day">#999999</color>
+
+    <color name="list_item_small_title_color_night">#FAFAFA</color>
+    <color name="list_item_small_time_color_night">#E6E6E6</color>
+
+
+    <!--个人中心-->
+    <color name="user_center_item_text_day">#333333</color>
+    <color name="user_center_item_text_night">#ffffff</color>
+
+    <color name="user_center_item_text_info_day">#999999</color>
+    <color name="user_center_item_text_info_night">#ffffff</color>
+
+
+
+    <color name="user_center_item_bg_day">#ffffff</color>
+    <color name="user_center_item_bg_second_day">#f9f9f9</color>
+
+    <color name="user_center_item_bg_night">#191919</color>
+    <color name="user_center_item_bg_second_night">#262626</color>
+
+
+    <!--快讯-->
+    <color name="flash_bg_day">#F2F2F2</color>
+    <color name="flash_bg_night">#424242</color>
+    <color name="flash_text_day">#999999</color>
+    <color name="flash_text_night">#ffffff</color>
+    <color name="flash_content_day">#333333</color>
+    <color name="flash_content_night">#ffffff</color>
+
+    <color name="flash_dialog_content_night">#BFBFBF</color>
+
+
+    <color name="comment_light_gray">#e6e5ea</color>
+    <color name="commnet_bg_night">#545454</color>
+    <color name="nav_sub_name_gray">#656565</color>
+
+
+    <color name="flash_list_bg_day">#ebebeb</color>
+    <color name="flash_list_bg_night">#333333</color>
+    <!--设置-->
+    <color name="setting_bg_day">#ebebeb</color>
+    <color name="setting_bg_night">#333333</color>
+    <color name="setting_viewline_day">#EFEFEF</color>
+    <color name="setting_viewline_night">#666460</color>
+    <color name="setting_item_text_day">#333333</color>
+    <color name="setting_item_text_info_day">#666666</color>
+    <color name="setting_item_text_night">#ffffff</color>
+    <color name="setting_english_night">#cbcbcb</color>
+    <color name="setting_english_day">#999999</color>
+
+    <!--layout item-->line_bg_share
+    <color name="layout_item_night">#212121</color>
+    <color name="layout_item_nomal_night">#424242</color>
+    <color name="layout_item_day">#e9e9e9</color>
+    <color name="layout_item_nomal_day">#ffffff</color>
+
+    <color name="line_bg_share">#E4E4E4</color>
+
+    <color name="textcolor_search_hint">#999999</color>
+    <color name="line_bg_search">#CECECE</color>
+    <color name="search_word_color_day">#000000</color>
+
+
+    <!--文章详情页-->
+    <color name="news_content_bottom_text_day">#999999</color>
+    <color name="news_content_bottom_text_night">#111111</color>
+
+    <!--客户中心-->
+    <color name="feedback_btn_text_night">#c4c4c4</color>
+    <color name="feedback_btn_text_day">#666666</color>
+
+    <color name="feedback_addimage_button_bg">#F6F6F6</color>
+
+
+    <color name="background_tab_pressed">#6633B5E5</color>
+    <color name="home_bar_text_normal">#6a6c6f</color>
+    <color name="home_bar_text_push">#ff5959</color>
+
+    <color name="btn_bg_pressed_color">#ffacac</color>
+    <color name="btn_bg_color">#ff5959</color>
+
+
+
+    <!--黑夜 白天 颜色-->
+    <color name="colorPrimaryNight">#263238</color>
+    <color name="colorPrimaryDarkNight">#1E282D</color>
+    <color name="colorAccentNight">#73432A</color>
+
+    <color name="dayBackground">#ffffff</color>
+    <color name="dayTextColor">#000</color>
+    <color name="dayItemBackground">#fff</color>
+
+    <color name="nightItemBackground">#37474F</color>
+    <color name="nightBackground">#1b1b1b</color>
+    <color name="nightTextColor">#fff</color>
+
+
+
+    <color name="thumbs_text_color">#999999</color>
+    <color name="thumbs_circle_color">#22F95C39</color>
+
+    <color name="account_bind">#999999</color>
+    <color name="account_tobind">#4AB6A6</color>
+
+
+
+    <color name="homepage_select">#ff000000</color>
+    <color name="homepage_unselect">#ffa8a8a8</color>
+
+    <color name="image_dialog">#000000</color>
+
+
+    <!--文字颜色规范-->
+    <color name="text_color_42_bold">#1a1a1a</color>
+    <color name="text_color_32_bold">#a8a8a8</color>
+    <!--如二级页面的导航栏标题（个人主页标题）-->
+    <color name="text_color_32">#1a1a1a</color>
+    <!--如首页的内容、聊天内容、按钮文字、主题详情说明、获取验证码-->
+    <color name="text_color_28_1">#424242</color>
+    <!--用于输入框引导 如问题反馈输入框引导内容-->
+    <color name="text_color_28_2">#a8a8a8</color>
+
+    <color name="text_color_barrage_edit_hint">#929292</color>
+    <!--用于二级页面副标题-->
+    <!--如动态详情页的副标题（热门评论/最新评论）-->
+    <color name="text_color_24_1">#1a1a1a</color>
+    <!--用于评论 ICon下的文字、个人中心辅助文字-->
+    <!--如内容下的评论/个人主页入口-->
+    <color name="text_color_24_2">#424242</color>
+    <!--用于内容标题/用户名/辅助性文字-->
+    <!--如首页内容所属的主题名称（即主题）、用户名称、缺省页提示语-->
+    <color name="text_color_24_3">#727272</color>
+    <color name="text_color_24_4">#a8a8a8</color>
+    <!--用于点赞数、副标题-->
+    <color name="text_color_22">#1a1a1a</color>
+    <color name="text_color_22_1">#727272</color>
+    <!--用于主题说明、副标题、-->
+    <!--如内容的所属主题下的说明、副标题-->
+    <!--用于实践、二级辅助性文字-->
+    <!--如内容的发送时间、未登录的页面提示-->
+    <color name="text_color_22_2">#a8a8a8</color>
+    <!--用于弹幕内容-->
+    <color name="text_color_20">#f1f1f1</color>
+
+    <color name="toast_error_bg">#E6EA816E</color>
+    <color name="toast_nomal_bg">#74E1C2</color>
+
+
+    <color name="home_page_viewline">#F0F0F0</color>
+
+    <color name="template_editphoto_color_stroke">#4e63a0</color>
+
+    <color name="guide_point_color_select">#A85AEC</color>
+
+    <color name="template_search_selected_backgroud">#1F234C</color>
+</resources>

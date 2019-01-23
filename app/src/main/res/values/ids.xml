@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item name="listview_tp_first_index" type="id" />
+    <item name="flash_tag" type="id" />
+    <item name="lunbo_postion" type="id" />
+    <item name="viewpage_postion" type="id" />
+    <item name="homepage_delete" type="id" />
+    <item name="video_item_mediacontrol" type="id" />
+    <!--顶部导航-->
+    <item name="tag_position" type="id"></item>
+
+    <item type="id" name="expandable_text"/>
+    <item type="id" name="expand_collapse"/>
+</resources>

@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/activity_back_color"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        >
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            >
+            <ImageView
+                android:id="@+id/addaddress_back"
+                android:layout_width="60dp"
+                android:layout_height="46dp"
+                android:scaleType="center"
+                android:src="@mipmap/submit_back" />
+
+            <TextView
+                android:id="@+id/addaddress_delete"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="15dp"
+                android:textSize="16sp"
+                android:textColor="@color/white"
+                android:text="删除"
+                android:visibility="gone"
+                />
+        </RelativeLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:text="新增地址"
+            android:textColor="@color/white"
+            android:textSize="26sp" />
+
+        <LinearLayout
+            android:id="@+id/addaddress_name_layout"
+            style="@style/addddress_layout_style"
+            android:layout_marginTop="50dp">
+
+            <TextView
+                style="@style/addaddress_text_style"
+                android:layout_alignParentLeft="true"
+                android:text="联系人" />
+
+            <EditText
+                android:id="@+id/addaddress_name"
+                style="@style/addaddress_edit_style"
+                android:layout_alignParentRight="true" />
+        </LinearLayout>
+
+        <View style="@style/line_style"></View>
+
+        <LinearLayout style="@style/addddress_layout_style"
+            android:id="@+id/addaddress_mobile_layout"
+            >
+
+            <TextView
+                style="@style/addaddress_text_style"
+                android:layout_alignParentLeft="true"
+                android:text="电话" />
+
+            <EditText
+                android:id="@+id/addaddress_mobile"
+                style="@style/addaddress_edit_style"
+                android:layout_alignParentRight="true"
+                android:inputType="number"
+                android:maxLength="11"
+                />
+        </LinearLayout>
+
+        <View style="@style/line_style"></View>
+
+        <LinearLayout style="@style/addddress_layout_style"
+            android:id="@+id/addaddress_address_layout"
+            >
+
+            <TextView
+                style="@style/addaddress_text_style"
+                android:layout_alignParentLeft="true"
+                android:text="省市" />
+
+            <TextView
+                android:id="@+id/addaddress_address"
+                style="@style/addaddress_edit_style"
+                android:layout_alignParentRight="true" />
+        </LinearLayout>
+
+        <View style="@style/line_style"></View>
+
+        <LinearLayout style="@style/addddress_layout_style"
+            android:id="@+id/addaddress_detailaddress_layout"
+            >
+
+            <TextView
+                style="@style/addaddress_text_style"
+                android:layout_alignParentLeft="true"
+                android:text="详细地址" />
+
+            <EditText
+                android:id="@+id/addaddress_detailaddress"
+                style="@style/addaddress_edit_style"
+                android:layout_alignParentRight="true" />
+        </LinearLayout>
+
+        <View style="@style/line_style"></View>
+
+        <View
+            android:layout_width="1px"
+            android:layout_height="0dp"
+            android:layout_weight="1"></View>
+
+        <TextView
+            android:id="@+id/addaddress_save"
+            style="@style/textview_button_style_small"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginBottom="40dp"
+            android:text="保存"
+            />
+    </LinearLayout>
+
+</RelativeLayout>
