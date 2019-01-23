@@ -2,7 +2,7 @@
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/activity_back_color"
+    android:background="#F4F4F4"
     >
 
     <com.facebook.drawee.view.SimpleDraweeView
@@ -17,7 +17,7 @@
         android:layout_width="match_parent"
         android:layout_height="80dp"
         android:layout_alignParentBottom="true"
-        android:background="@color/activity_back_color"
+        android:background="@color/white"
         >
         <ImageView
             android:id="@+id/pictruecancel"
