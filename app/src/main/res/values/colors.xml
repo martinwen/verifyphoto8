@@ -267,5 +267,5 @@
 
     <color name="guide_point_color_select">#A85AEC</color>
 
-    <color name="template_search_selected_backgroud">#1F234C</color>
+    <color name="template_search_selected_backgroud">#EAEAEA</color>
 </resources>

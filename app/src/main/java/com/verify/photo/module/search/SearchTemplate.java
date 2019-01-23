@@ -43,7 +43,7 @@ public class SearchTemplate extends BaseItemTempalte {
 //        tips.setText(bean.getTips());
 
         if (bean.getIsChecked() == 0) {
-            rootview.setBackgroundColor(context.getResources().getColor(R.color.black));
+            rootview.setBackgroundColor(context.getResources().getColor(R.color.white));
 //            arrow.setImageResource(R.mipmap.template_search_arrow_right);
 //            tips.setVisibility(View.GONE);
         } else {
