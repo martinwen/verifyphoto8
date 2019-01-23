@@ -15,41 +15,31 @@
     </FrameLayout>
 
     <RelativeLayout
+        android:id="@+id/bottom_layout"
         android:layout_width="match_parent"
-        android:layout_height="115dp"
+        android:layout_height="109dp"
         android:layout_alignParentBottom="true"
-        android:layout_alignParentStart="true"
-        android:gravity="center_vertical">
+        android:background="@color/white">
 
-        <RelativeLayout
-            android:id="@+id/bottom_layout"
-            android:layout_width="match_parent"
-            android:layout_height="80dp"
-            android:layout_alignParentBottom="true"
-            android:background="@color/black"
-            >
-            <com.facebook.drawee.view.SimpleDraweeView
-                android:id="@+id/camera_album_image"
-                android:layout_width="46dp"
-                android:layout_height="46dp"
-                android:layout_marginLeft="20dp"
-                android:layout_centerVertical="true"
-                android:background="@color/white"
-                />
+        <com.facebook.drawee.view.SimpleDraweeView
+            android:id="@+id/camera_album_image"
+            android:layout_width="46dp"
+            android:layout_height="46dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="20dp"
+            android:background="@color/white" />
 
-            <TextView
-                android:id="@+id/cameraactivity_strategy"
-                android:layout_width="wrap_content"
-                android:layout_height="50dp"
-                android:gravity="center"
-                android:layout_alignParentRight="true"
-                android:layout_marginRight="20dp"
-                android:layout_centerVertical="true"
-                android:textSize="17sp"
-                android:textColor="@color/white"
-                android:text="拍照攻略"
-                />
-        </RelativeLayout>
+        <TextView
+            android:id="@+id/cameraactivity_strategy"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="20dp"
+            android:gravity="center"
+            android:text="拍照攻略"
+            android:textColor="@color/black"
+            android:textSize="17sp" />
 
         <ImageView
             android:id="@+id/img_camera"
@@ -57,10 +47,9 @@
             android:layout_height="102dp"
             android:layout_centerHorizontal="true"
             android:scaleType="center"
-            android:background="@drawable/takepictrue_icon_back"
             android:src="@mipmap/take_pictrue_icon" />
-
     </RelativeLayout>
+
 
     <LinearLayout
         android:id="@+id/camera_top_layout"
@@ -75,7 +64,7 @@
             android:layout_width="50dp"
             android:layout_height="match_parent"
             android:scaleType="center"
-            android:src="@mipmap/camera_left_back" />
+            android:src="@mipmap/white_back" />
 
         <View
             android:layout_width="0dp"
@@ -93,8 +82,8 @@
             android:layout_width="0dp"
             android:layout_height="match_parent"
             android:layout_weight="1"
-            android:gravity="center"
-            >
+            android:gravity="center">
+
             <ImageView
                 android:id="@+id/flash_light"
                 android:layout_width="50dp"
@@ -114,9 +103,9 @@
     <ImageView
         android:layout_width="match_parent"
         android:layout_height="match_parent"
+        android:layout_above="@id/bottom_layout"
         android:layout_below="@id/camera_top_layout"
-        android:layout_marginBottom="80dp"
-        android:layout_centerHorizontal="true"
+        android:scaleType="center"
         android:src="@mipmap/head_limit" />
 
     <TextView
@@ -124,35 +113,32 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_below="@id/camera_top_layout"
-        android:layout_marginTop="30dp"
         android:layout_centerInParent="true"
-        android:paddingBottom="3dp"
-        android:paddingTop="3dp"
-        android:paddingLeft="8dp"
-        android:paddingRight="8dp"
+        android:layout_marginTop="30dp"
         android:background="@drawable/textview_takepictrue_bg"
-        android:textColor="@color/white"
+        android:paddingLeft="8dp"
+        android:paddingTop="3dp"
+        android:paddingRight="8dp"
+        android:paddingBottom="3dp"
         android:text="@string/takepictrue_tips1"
-        />
+        android:textColor="@color/white" />
 
     <TextView
         android:id="@+id/camera_delayed_num"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
+        android:layout_centerInParent="true"
         android:gravity="center"
         android:textColor="@color/white"
         android:textSize="123sp"
-        android:layout_centerInParent="true"
-        android:visibility="gone"
-        />
+        android:visibility="gone" />
 
     <LinearLayout
         android:id="@+id/camera_guidelayout"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:orientation="vertical"
         android:background="#60000000"
-        android:visibility="gone"
-        ></LinearLayout>
+        android:orientation="vertical"
+        android:visibility="gone"></LinearLayout>
 
 </RelativeLayout>
