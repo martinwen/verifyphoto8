@@ -4,6 +4,7 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
 import android.support.v7.widget.GridLayoutManager;
+import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
 import android.text.Layout;
 import android.view.LayoutInflater;
@@ -44,9 +45,9 @@ public class SelectSizeActivity extends BaseActivity implements View.OnClickList
     public static final String TYPE = "type";
     public static final String IMAGEPATH = "imagepath";
     private TextView nextBtn;
-    private ImageView back;
+    private ImageView back, moreSpec;
     private RecyclerView recyclerView;
-    private LinearLayout searchLayout, moreSpec;
+    private LinearLayout searchLayout;
     private HeadFootAdapter adapter;
     private List<SelectSizeBean> list = new ArrayList<>();
     private int specId = 0;
@@ -55,7 +56,6 @@ public class SelectSizeActivity extends BaseActivity implements View.OnClickList
     private SelectSizeContract.Presenter presenter;
 
     private LodingDialog lodingDialog;
-    private View footview;
 
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
@@ -76,9 +76,8 @@ public class SelectSizeActivity extends BaseActivity implements View.OnClickList
     }
 
     private void initView() {
-        footview = LayoutInflater.from(this).inflate(R.layout.selectactivity_footview, null);
         lodingDialog = new LodingDialog(this, 1);
-        moreSpec = footview.findViewById(R.id.selectacticity_morespec_layout);
+        moreSpec = findViewById(R.id.more_spec);
         moreSpec.setOnClickListener(this);
         searchLayout = findViewById(R.id.select_size_searchlayout);
         searchLayout.setOnClickListener(this);
@@ -87,7 +86,7 @@ public class SelectSizeActivity extends BaseActivity implements View.OnClickList
         nextBtn = findViewById(R.id.select_size_next_btn);
         nextBtn.setOnClickListener(this);
         recyclerView = findViewById(R.id.select_size_list);
-        recyclerView.setLayoutManager(new GridLayoutManager(this, 3));
+        recyclerView.setLayoutManager(new LinearLayoutManager(this));
         recyclerView.setAdapter(getAdapter());
         adapter.setOnItemClickListener(new MultTemplateAdapter.OnItemCLickListener() {
             @Override
@@ -129,7 +128,7 @@ public class SelectSizeActivity extends BaseActivity implements View.OnClickList
             case R.id.select_size_searchlayout:
                 toSearchActivity();
                 break;
-            case R.id.selectacticity_morespec_layout:
+            case R.id.more_spec:
                 toSearchActivity();
                 break;
         }
@@ -139,7 +138,6 @@ public class SelectSizeActivity extends BaseActivity implements View.OnClickList
         if (adapter == null) {
             adapter = new HeadFootAdapter(this);
             adapter.addItemTemplate(new SelectSizeTemplate(this));
-            adapter.addFooterView(footview);
         }
         return adapter;
     }

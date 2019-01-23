@@ -2,6 +2,7 @@ package com.verify.photo.module.selectsize;
 
 import android.content.Context;
 import android.widget.LinearLayout;
+import android.widget.RelativeLayout;
 import android.widget.TextView;
 
 import com.facebook.drawee.view.SimpleDraweeView;
@@ -33,7 +34,7 @@ public class SelectSizeTemplate extends BaseItemTempalte {
         SimpleDraweeView icon = holder.getView(R.id.select_size_item_icon);
         TextView name = holder.getView(R.id.select_size_item_name);
         TextView instruction = holder.getView(R.id.select_size_item_instruction);
-        LinearLayout layout = holder.getView(R.id.select_size_itemlayout);
+        RelativeLayout layout = holder.getView(R.id.select_size_itemlayout);
         SelectSizeBean bean = (SelectSizeBean) list.get(position);
         FrescoUtils.getInstance().showImage(icon,bean.getIcon());
         name.setText(bean.getName());

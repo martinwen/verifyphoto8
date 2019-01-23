@@ -1,24 +1,29 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:fresco="http://schemas.android.com/apk/res-auto"
-    android:orientation="vertical"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
-    android:gravity="center"
-    android:padding="8dp">
+    android:paddingLeft="19dp"
+    android:paddingRight="19dp"
+    android:paddingTop="5dp"
+    android:paddingBottom="5dp"
+    >
 
-    <LinearLayout
+    <RelativeLayout
         android:id="@+id/select_size_itemlayout"
-        android:layout_width="100dp"
-        android:layout_height="100dp"
+        android:layout_width="match_parent"
+        android:layout_height="72dp"
         android:orientation="vertical"
-        android:gravity="center_horizontal"
+        android:paddingLeft="26dp"
+        android:paddingTop="13dp"
+        android:paddingBottom="13dp"
+        android:background="@drawable/mainpage_layout_back"
         >
         <com.facebook.drawee.view.SimpleDraweeView
             android:id="@+id/select_size_item_icon"
             android:layout_width="25dp"
             android:layout_height="30dp"
-            android:layout_marginTop="8dp"
+            android:layout_centerVertical="true"
             fresco:actualImageScaleType="fitCenter"
             />
 
@@ -26,8 +31,9 @@
             android:id="@+id/select_size_item_name"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginTop="5dp"
-            android:textColor="#424242"
+            android:layout_toRightOf="@id/select_size_item_icon"
+            android:layout_marginLeft="30dp"
+            android:textColor="#71686A"
             android:textSize="12sp"
             />
 
@@ -35,9 +41,11 @@
             android:id="@+id/select_size_item_instruction"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginTop="5dp"
-            android:textColor="#999999"
+            android:layout_toRightOf="@id/select_size_item_icon"
+            android:layout_marginLeft="30dp"
+            android:layout_alignParentBottom="true"
+            android:textColor="#B9B9B9"
             android:textSize="12sp"
             />
-    </LinearLayout>
+    </RelativeLayout>
 </LinearLayout>

@@ -40,50 +40,6 @@
         >
 
         <RelativeLayout
-            android:id="@+id/album_layout"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:background="@drawable/mainpage_layout_back"
-            android:paddingLeft="18dp"
-            android:paddingTop="20dp"
-            android:paddingBottom="20dp"
-            android:gravity="center_vertical"
-            >
-
-            <ImageView
-                android:id="@+id/album"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:src="@mipmap/album" />
-
-            <LinearLayout
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:orientation="vertical"
-                android:layout_toRightOf="@id/album"
-                android:layout_marginLeft="18dp"
-                >
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:textColor="@color/black"
-                    android:textSize="13sp"
-                    android:text="拍照"
-                    />
-
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:textColor="#9E9597"
-                    android:layout_marginTop="5dp"
-                    android:textSize="13sp"
-                    android:text="海量尺寸任你选"
-                    />
-            </LinearLayout>
-
-        </RelativeLayout>
-
-        <RelativeLayout
             android:id="@+id/takepictrue_layout"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -91,7 +47,6 @@
             android:paddingLeft="18dp"
             android:paddingTop="20dp"
             android:paddingBottom="20dp"
-            android:layout_marginTop="14dp"
             android:gravity="center_vertical"
             >
 
@@ -129,6 +84,51 @@
         </RelativeLayout>
 
         <RelativeLayout
+            android:id="@+id/album_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/mainpage_layout_back"
+            android:paddingLeft="18dp"
+            android:paddingTop="20dp"
+            android:paddingBottom="20dp"
+            android:layout_marginTop="14dp"
+            android:gravity="center_vertical"
+            >
+
+            <ImageView
+                android:id="@+id/album"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@mipmap/album" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_toRightOf="@id/album"
+                android:layout_marginLeft="18dp"
+                >
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/black"
+                    android:textSize="13sp"
+                    android:text="相册"
+                    />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="#9E9597"
+                    android:layout_marginTop="5dp"
+                    android:textSize="13sp"
+                    android:text="拍摄保存的证件照"
+                    />
+            </LinearLayout>
+
+        </RelativeLayout>
+
+        <RelativeLayout
             android:id="@+id/mine_layout"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -158,7 +158,7 @@
                     android:layout_height="wrap_content"
                     android:textColor="@color/black"
                     android:textSize="13sp"
-                    android:text="拍照"
+                    android:text="我的"
                     />
 
                 <TextView
@@ -167,7 +167,7 @@
                     android:textColor="#9E9597"
                     android:layout_marginTop="5dp"
                     android:textSize="13sp"
-                    android:text="海量尺寸任你选"
+                    android:text="在这里查看订单"
                     />
             </LinearLayout>
 
