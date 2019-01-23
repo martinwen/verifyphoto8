@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <corners
+        android:radius="12dp"></corners>
+
+    <solid
+        android:color="@color/white"></solid>
+
+    <item name="android:shadowDx">0</item>
+    <item name="android:shadowDy">5</item>
+</shape>

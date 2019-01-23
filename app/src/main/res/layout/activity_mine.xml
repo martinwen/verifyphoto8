@@ -5,11 +5,6 @@
     android:layout_height="match_parent"
     android:background="@color/black">
 
-    <ImageView
-        android:id="@+id/mine_backgroud"
-        android:layout_width="match_parent"
-        android:layout_height="207dp"
-        android:background="@mipmap/image_top_bg" />
 
     <ImageView
         android:id="@+id/mine_back"

@@ -14,10 +14,6 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content">
 
-            <ImageView
-                android:layout_width="match_parent"
-                android:layout_height="207dp"
-                android:background="@mipmap/image_top_bg" />
 
             <LinearLayout
                 android:id="@+id/submit_order_layout"

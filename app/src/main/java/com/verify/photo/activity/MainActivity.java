@@ -8,7 +8,6 @@ import android.os.Bundle;
 import android.text.TextUtils;
 import android.view.KeyEvent;
 import android.view.View;
-import android.widget.ImageView;
 import android.widget.RelativeLayout;
 
 import com.umeng.analytics.MobclickAgent;
@@ -42,10 +41,7 @@ import static com.verify.photo.receiver.MyReceiver.KEY_INTENT_TARGET;
 public class MainActivity extends AppCompatActivity implements View.OnClickListener {
     private static final String TAG = "主页";
 
-    private ImageView albun;
-    private ImageView takepictrue;
-    private RelativeLayout takepictrueLayout;
-    private ImageView mine;
+    private RelativeLayout takepictrueLayout, albumLayout, mineLayout;
     private final int REQUEST_PERMISSION_CODE = 015;
     private final int SET_PERMISSION_CODE = REQUEST_PERMISSION_CODE + 1;
     private final int REQUEST_LOGIN_CODE = SET_PERMISSION_CODE + 1;
@@ -58,13 +54,12 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         MyApplication.mainActivity = this;
-        albun = findViewById(R.id.album);
-        takepictrue = findViewById(R.id.takepictrue);
         takepictrueLayout = findViewById(R.id.takepictrue_layout);
-        mine = findViewById(R.id.mine);
-        albun.setOnClickListener(this);
+        albumLayout = findViewById(R.id.album_layout);
+        mineLayout = findViewById(R.id.mine_layout);
         takepictrueLayout.setOnClickListener(this);
-        mine.setOnClickListener(this);
+        mineLayout.setOnClickListener(this);
+        albumLayout.setOnClickListener(this);
         if (savedInstanceState != null) {
             this.returnInstanceState(savedInstanceState);
         }
@@ -115,7 +110,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     @Override
     public void onClick(View v) {
         switch (v.getId()) {
-            case R.id.album:
+            case R.id.album_layout:
                 MobclickAgent.onEvent(this, Constants.EVENT_BUTTON_MAIN_ALBUM);
                 Intent intent;
                 intent = new Intent(MainActivity.this, AlbumActivity.class);
@@ -127,7 +122,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                 intent1.putExtra(SelectSizeActivity.TYPE, 0);
                 startActivity(intent1);
                 break;
-            case R.id.mine:
+            case R.id.mine_layout:
                 MobclickAgent.onEvent(this, Constants.EVENT_BUTTON_MAIN_MINE);
                 Intent in3 = new Intent(this, MineActivity.class);
                 startActivity(in3);
