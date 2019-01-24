@@ -65,7 +65,7 @@ public class PreviewActivity extends BaseActivity implements View.OnClickListene
     private ImageView back;
     private LinearLayout preview_pay, preview_print, paysuccessLayout, previewLayout;
     private TextView amount1, amount2, paySuccessAmout, paySuccessOrderNum, paySuccessTime;
-    private ImageView toMainpage, viewOrder;
+    private TextView toMainpage, viewOrder;
 
     private PreviewContract.Presenter presenter;
     private MyReceiver receiver;
