@@ -1,18 +1,17 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:orientation="vertical"
     android:layout_width="match_parent"
     android:layout_height="fill_parent"
     android:background="#88000000"
-    >
+    android:orientation="vertical">
+
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:orientation="vertical"
-        android:paddingBottom="20dp"
-        android:gravity="center_horizontal"
         android:background="@color/white"
-        >
+        android:gravity="center_horizontal"
+        android:orientation="vertical"
+        android:paddingBottom="20dp">
 
         <ImageView
             android:id="@+id/paydialog_close"
@@ -20,8 +19,8 @@
             android:layout_height="50dp"
             android:layout_gravity="left"
             android:scaleType="center"
-            android:src="@mipmap/paydialog_close_icon"
-            />
+            android:src="@mipmap/paydialog_close_icon" />
+
         <LinearLayout
             android:id="@+id/paydialog_alipay_layout"
             android:layout_width="match_parent"
@@ -29,10 +28,10 @@
             android:layout_marginTop="20dp"
             android:gravity="center_vertical"
             android:orientation="horizontal"
-            android:paddingBottom="10dp"
             android:paddingLeft="35dp"
+            android:paddingTop="10dp"
             android:paddingRight="35dp"
-            android:paddingTop="10dp">
+            android:paddingBottom="10dp">
 
             <ImageView
                 android:layout_width="wrap_content"
@@ -63,14 +62,13 @@
             android:id="@+id/paydialog_wechat_layout"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:layout_marginBottom="30dp"
             android:gravity="center_vertical"
             android:orientation="horizontal"
-            android:paddingBottom="10dp"
             android:paddingLeft="35dp"
-            android:paddingRight="35dp"
             android:paddingTop="10dp"
-            android:layout_marginBottom="30dp"
-            >
+            android:paddingRight="35dp"
+            android:paddingBottom="10dp">
 
             <ImageView
                 android:layout_width="wrap_content"
@@ -101,10 +99,10 @@
             android:id="@+id/paydialog_deadline_layout"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:paddingTop="5dp"
-            android:orientation="horizontal"
             android:gravity="center_horizontal"
-            >
+            android:orientation="horizontal"
+            android:paddingTop="5dp">
+
             <TextView
                 android:id="@+id/paydialog_deadline_text"
                 android:layout_width="wrap_content"
@@ -116,17 +114,15 @@
                 android:id="@+id/deadline_tip"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:textColor="#AF3234"
-                android:textSize="13sp"
                 android:text="后关闭此订单"
-                />
+                android:textColor="#AF3234"
+                android:textSize="13sp" />
         </LinearLayout>
 
         <TextView
             android:id="@+id/paydialog_pay_button"
-            style="@style/textview_button_style_big"
+            style="@style/bigbutton_style"
             android:layout_marginTop="10dp"
-            android:text="确认支付"
-            />
+            android:text="确认支付" />
     </LinearLayout>
 </LinearLayout>
