@@ -67,12 +67,12 @@ public class OrderDetailActivity extends Activity implements OnClickListener, Or
     private static final int SDK_PAY_FLAG = 1;
     private OrderDetailContract.Presenter presenter;
     private Order order;
-    private ImageView back, viewOrder, toMainpage;
+    private ImageView back;
     private TextView saveSuccess, title, photoName, photoIns, orderNum, createTime, payTime, refundTime, amout1, amount2, payStatus1, copyExpressNum,
             payStatus2, name, mobile, address, button, buttonPrint, printcount, includecount, expresscompany,
-            expressnumber, paySuccessAmout, paySuccessOrderNum, paySuccessTime;
-    private RelativeLayout orderDetailLayout, paytimeLayout, refundtimeLayout, amoutLayout1, amoutLayout2, expresscompanyLayout, expressnumberLayout;
-    private LinearLayout addressLayout, printcountLayout, savetoWx, paySuccessLayout;
+            expressnumber, paySuccessAmout, paySuccessOrderNum, paySuccessTime, viewOrder, toMainpage;
+    private RelativeLayout paytimeLayout, refundtimeLayout, amoutLayout1, amoutLayout2, expresscompanyLayout, expressnumberLayout;
+    private LinearLayout addressLayout, printcountLayout, savetoWx, paySuccessLayout, orderDetailLayout;
     private SimpleDraweeView photo;
     private ImageDialog imageDialog;
     private LodingDialog lodingDialog;
@@ -135,12 +135,12 @@ public class OrderDetailActivity extends Activity implements OnClickListener, Or
         imageDialog = new ImageDialog(this);
 
         orderDetailLayout = findViewById(R.id.orderdetail_layout);
-        paySuccessLayout = findViewById(R.id.printpay_paysuccess_layout);
-        toMainpage = findViewById(R.id.printpay_pay_success_tomianpage);
-        viewOrder = findViewById(R.id.printpay_pay_success_vieworder);
-        paySuccessAmout = findViewById(R.id.printpay_pay_success_amout);
-        paySuccessOrderNum = findViewById(R.id.printpay_pay_success_order_num);
-        paySuccessTime = findViewById(R.id.printpay_pay_success_order_paytime);
+        paySuccessLayout = findViewById(R.id.submit_paysuccess_layout);
+        toMainpage = findViewById(R.id.submit_pay_success_tomianpage);
+        viewOrder = findViewById(R.id.submit_pay_success_vieworder);
+        paySuccessAmout = findViewById(R.id.submit_pay_success_amout);
+        paySuccessOrderNum = findViewById(R.id.submit_pay_success_order_num);
+        paySuccessTime = findViewById(R.id.submit_pay_success_order_paytime);
         toMainpage.setOnClickListener(this);
         viewOrder.setOnClickListener(this);
         saveSuccess = findViewById(R.id.save_success);
