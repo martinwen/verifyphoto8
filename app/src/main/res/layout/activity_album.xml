@@ -3,19 +3,20 @@
     android:orientation="vertical"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#151723"
+    android:background="#F8F8F8"
     >
     <RelativeLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:padding="15dp"
+        android:layout_height="42dp"
+        android:background="#FCB8DF"
         >
         <ImageView
             android:id="@+id/album_back"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            android:layout_width="50dp"
+            android:layout_height="42dp"
             android:layout_centerVertical="true"
-            android:src="@mipmap/album_back"
+            android:scaleType="center"
+            android:src="@mipmap/white_back"
             />
         <TextView
             android:layout_width="wrap_content"
@@ -32,7 +33,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_centerInParent="true"
-            android:textColor="@color/login_hint"
+            android:textColor="@color/white"
             android:textSize="17sp"
             />
         <TextView
@@ -42,6 +43,7 @@
             android:layout_centerVertical="true"
             android:layout_alignParentRight="true"
             android:textColor="@color/white"
+            android:layout_marginRight="10dp"
             android:text="导入图片"
             android:textSize="17sp"
             />
@@ -117,7 +119,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="5dp"
-                android:textColor="@color/white"
+                android:textColor="@color/black"
                 android:textSize="13sp"
                 android:text="保存至微信"
                 />
@@ -133,14 +135,13 @@
             >
             <TextView
                 android:id="@+id/album_button_download"
-                style="@style/textview_button_style_small"
-                android:background="@mipmap/gradual_circle_back_small"
+                style="@style/smallbutton_circle_style"
                 android:text="下载图片"
                 />
 
             <TextView
                 android:id="@+id/album_button_print"
-                style="@style/textview_button_style_small"
+                style="@style/smallbutton_style"
                 android:layout_marginLeft="20dp"
                 android:text="冲印实物"
                 />

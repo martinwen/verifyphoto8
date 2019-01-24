@@ -166,4 +166,22 @@
         <item name="android:background">@drawable/bigbutton_circle_back</item>
     </style>
 
+    <style name="smallbutton_style">
+        <item name="android:layout_width">122dp</item>
+        <item name="android:layout_height">50dp</item>
+        <item name="android:textSize">17sp</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:gravity">center</item>
+        <item name="android:background">@drawable/bigbutton_back</item>
+    </style>
+
+    <style name="smallbutton_circle_style">
+        <item name="android:layout_width">122dp</item>
+        <item name="android:layout_height">50dp</item>
+        <item name="android:textSize">17sp</item>
+        <item name="android:textColor">#FA75C4</item>
+        <item name="android:gravity">center</item>
+        <item name="android:background">@drawable/bigbutton_circle_back</item>
+    </style>
+
 </resources>
