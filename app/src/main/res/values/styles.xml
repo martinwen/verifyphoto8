@@ -117,9 +117,8 @@
         <item name="android:layout_marginRight">20dp</item>
         <item name="android:layout_width">match_parent</item>
         <item name="android:layout_height">wrap_content</item>
-        <item name="android:paddingTop">10dp</item>
-        <item name="android:paddingBottom">10dp</item>
-        <item name="android:layout_marginTop">20dp</item>
+        <item name="android:paddingTop">20dp</item>
+        <item name="android:paddingBottom">20dp</item>
         <item name="android:gravity">center_vertical</item>
     </style>
 
@@ -128,18 +127,18 @@
         <item name="android:layout_height">1px</item>
         <item name="android:layout_marginLeft">20dp</item>
         <item name="android:layout_marginRight">20dp</item>
-        <item name="android:background">#656F96</item>
+        <item name="android:background">D9D9D9</item>
     </style>
 
     <style name="addaddress_text_style">
-        <item name="android:textColor">@color/white</item>
-        <item name="android:textSize">15sp</item>
+        <item name="android:textColor">@color/black</item>
+        <item name="android:textSize">17sp</item>
         <item name="android:layout_width">wrap_content</item>
         <item name="android:layout_height">wrap_content</item>
     </style>
 
     <style name="addaddress_edit_style" parent="addaddress_text_style">
-            <item name="android:textColor">@color/white</item>
+            <item name="android:textColor">@color/black</item>
             <item name="android:textSize">15sp</item>
             <item name="android:layout_width">match_parent</item>
             <item name="android:layout_height">wrap_content</item>
@@ -182,6 +181,21 @@
         <item name="android:textColor">#FA75C4</item>
         <item name="android:gravity">center</item>
         <item name="android:background">@drawable/bigbutton_circle_back</item>
+    </style>
+
+    <style name="minelayout_style">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">65dp</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:orientation">horizontal</item>
+        <item name="android:paddingLeft">15dp</item>
+    </style>
+
+    <style name="minetext_style">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textSize">14sp</item>
+        <item name="android:textColor">@color/black</item>
     </style>
 
 </resources>

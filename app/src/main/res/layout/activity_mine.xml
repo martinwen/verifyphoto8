@@ -3,50 +3,52 @@
     xmlns:fresco="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/black">
+    android:background="#F8F8F8">
 
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="42dp"
+        android:background="#FCB8DF">
 
-    <ImageView
-        android:id="@+id/mine_back"
-        android:layout_width="30dp"
-        android:layout_height="30dp"
-        android:layout_marginLeft="15dp"
-        android:layout_marginTop="15dp"
-        android:scaleType="center"
-        android:src="@mipmap/submit_back" />
+        <ImageView
+            android:id="@+id/mine_back"
+            android:layout_width="50dp"
+            android:layout_height="42dp"
+            android:scaleType="center"
+            android:src="@mipmap/white_back" />
+
+        <TextView
+            android:id="@+id/order_detail_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="我的"
+            android:textColor="@color/white"
+            android:textSize="17sp" />
+    </RelativeLayout>
 
     <ScrollView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="50dp"
+        android:layout_marginTop="42dp"
         android:scrollbars="none">
 
-        <LinearLayout
+        <RelativeLayout
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:orientation="vertical"
-            android:paddingBottom="15dp"
-            android:paddingLeft="15dp"
-            android:paddingRight="15dp">
-
-            <TextView
-                android:id="@+id/order_detail_title"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="我的"
-                android:textColor="@color/white"
-                android:textSize="31sp" />
+            android:layout_height="wrap_content">
 
             <LinearLayout
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="30dp"
-                android:orientation="horizontal">
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="24dp"
+                android:gravity="center_horizontal"
+                android:orientation="vertical">
 
                 <com.facebook.drawee.view.SimpleDraweeView
                     android:id="@+id/mine_user_head"
-                    android:layout_width="70dp"
-                    android:layout_height="70dp"
+                    android:layout_width="84dp"
+                    android:layout_height="84dp"
                     fresco:actualImageScaleType="centerCrop"
                     fresco:roundAsCircle="true"
                     fresco:roundingBorderColor="@color/white"
@@ -56,187 +58,153 @@
                     android:id="@+id/mine_nickname"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_marginLeft="10dp"
                     android:layout_marginTop="15dp"
-                    android:textColor="@color/white"
-                    android:textSize="18sp" />
+                    android:textColor="@color/black"
+                    android:textSize="21sp" />
             </LinearLayout>
 
             <LinearLayout
-                android:id="@+id/mine_order_layout"
                 android:layout_width="match_parent"
-                android:layout_height="65dp"
-                android:layout_marginTop="40dp"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginTop="66dp"
+                android:paddingTop="110dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
                 android:background="@drawable/mine_layout_bg"
-                android:gravity="center_vertical"
-                android:orientation="horizontal"
-                android:padding="20dp">
+                >
 
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="我的订单"
-                    android:textColor="@color/white"
-                    android:textSize="14sp" />
+                <LinearLayout
+                    android:id="@+id/mine_order_layout"
+                    style="@style/minelayout_style"
+                    >
 
-                <View
-                    android:layout_width="0dp"
-                    android:layout_height="1dp"
-                    android:layout_weight="1"></View>
+                    <TextView
+                        style="@style/minetext_style"
+                        android:text="我的订单"
+                        />
 
-                <ImageView
-                    android:layout_width="40dp"
-                    android:layout_height="40dp"
-                    android:scaleType="center"
-                    android:src="@mipmap/mine_right_arrow" />
+                    <View
+                        android:layout_width="0dp"
+                        android:layout_height="1dp"
+                        android:layout_weight="1"></View>
+
+                    <ImageView
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:scaleType="center"
+                        android:src="@mipmap/mine_right_arrow" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/mine_share_layout"
+                    style="@style/minelayout_style">
+
+                    <TextView
+                        style="@style/minetext_style"
+                        android:text="邀请好友" />
+
+                    <View
+                        android:layout_width="0dp"
+                        android:layout_height="1dp"
+                        android:layout_weight="1"></View>
+
+                    <ImageView
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:scaleType="center"
+                        android:src="@mipmap/mine_right_arrow" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/mine_feedback_layout"
+                    style="@style/minelayout_style">
+
+                    <TextView
+                        style="@style/minetext_style"
+                        android:text="客服"
+                        />
+
+                    <View
+                        android:layout_width="0dp"
+                        android:layout_height="1dp"
+                        android:layout_weight="1"></View>
+
+                    <ImageView
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:scaleType="center"
+                        android:src="@mipmap/mine_right_arrow" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/mine_about_layout"
+                    style="@style/minelayout_style"
+                    >
+
+                    <TextView
+                        style="@style/minetext_style"
+                        android:text="关于我们"
+                        />
+
+                    <View
+                        android:layout_width="0dp"
+                        android:layout_height="1dp"
+                        android:layout_weight="1"></View>
+
+                    <ImageView
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:scaleType="center"
+                        android:src="@mipmap/mine_right_arrow" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/mine_help_layout"
+                    style="@style/minelayout_style">
+
+                    <TextView
+                        style="@style/minetext_style"
+                        android:text="帮助"
+                        />
+
+                    <View
+                        android:layout_width="0dp"
+                        android:layout_height="1dp"
+                        android:layout_weight="1"></View>
+
+                    <ImageView
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:scaleType="center"
+                        android:src="@mipmap/mine_right_arrow" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/mine_logout_layout"
+                    style="@style/minelayout_style">
+
+                    <TextView
+                        android:text="退出登录"
+                        style="@style/minetext_style"
+                        />
+
+                    <View
+                        android:layout_width="0dp"
+                        android:layout_height="1dp"
+                        android:layout_weight="1"></View>
+
+                    <ImageView
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:scaleType="center"
+                        android:src="@mipmap/mine_right_arrow" />
+                </LinearLayout>
+
             </LinearLayout>
 
-            <LinearLayout
-                android:id="@+id/mine_share_layout"
-                android:layout_width="match_parent"
-                android:layout_height="65dp"
-                android:layout_marginTop="14dp"
-                android:background="@drawable/mine_layout_bg"
-                android:gravity="center_vertical"
-                android:orientation="horizontal"
-                android:padding="20dp">
+        </RelativeLayout>
 
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="邀请好友"
-                    android:textColor="@color/white"
-                    android:textSize="14sp" />
-
-                <View
-                    android:layout_width="0dp"
-                    android:layout_height="1dp"
-                    android:layout_weight="1"></View>
-
-                <ImageView
-                    android:layout_width="40dp"
-                    android:layout_height="40dp"
-                    android:scaleType="center"
-                    android:src="@mipmap/mine_right_arrow" />
-            </LinearLayout>
-
-            <LinearLayout
-                android:id="@+id/mine_feedback_layout"
-                android:layout_width="match_parent"
-                android:layout_height="65dp"
-                android:layout_marginTop="14dp"
-                android:background="@drawable/mine_layout_bg"
-                android:gravity="center_vertical"
-                android:orientation="horizontal"
-                android:padding="20dp">
-
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="客服"
-                    android:textColor="@color/white"
-                    android:textSize="14sp" />
-
-                <View
-                    android:layout_width="0dp"
-                    android:layout_height="1dp"
-                    android:layout_weight="1"></View>
-
-                <ImageView
-                    android:layout_width="40dp"
-                    android:layout_height="40dp"
-                    android:scaleType="center"
-                    android:src="@mipmap/mine_right_arrow" />
-            </LinearLayout>
-
-            <LinearLayout
-                android:id="@+id/mine_about_layout"
-                android:layout_width="match_parent"
-                android:layout_height="65dp"
-                android:layout_marginTop="14dp"
-                android:background="@drawable/mine_layout_bg"
-                android:gravity="center_vertical"
-                android:orientation="horizontal"
-                android:padding="20dp">
-
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="关于我们"
-                    android:textColor="@color/white"
-                    android:textSize="14sp" />
-
-                <View
-                    android:layout_width="0dp"
-                    android:layout_height="1dp"
-                    android:layout_weight="1"></View>
-
-                <ImageView
-                    android:layout_width="40dp"
-                    android:layout_height="40dp"
-                    android:scaleType="center"
-                    android:src="@mipmap/mine_right_arrow" />
-            </LinearLayout>
-
-            <LinearLayout
-                android:id="@+id/mine_help_layout"
-                android:layout_width="match_parent"
-                android:layout_height="65dp"
-                android:layout_marginTop="14dp"
-                android:background="@drawable/mine_layout_bg"
-                android:gravity="center_vertical"
-                android:orientation="horizontal"
-                android:padding="20dp">
-
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="帮助"
-                    android:textColor="@color/white"
-                    android:textSize="14sp" />
-
-                <View
-                    android:layout_width="0dp"
-                    android:layout_height="1dp"
-                    android:layout_weight="1"></View>
-
-                <ImageView
-                    android:layout_width="40dp"
-                    android:layout_height="40dp"
-                    android:scaleType="center"
-                    android:src="@mipmap/mine_right_arrow" />
-            </LinearLayout>
-
-            <LinearLayout
-                android:id="@+id/mine_logout_layout"
-                android:layout_width="match_parent"
-                android:layout_height="65dp"
-                android:layout_marginTop="14dp"
-                android:background="@drawable/mine_layout_bg"
-                android:gravity="center_vertical"
-                android:orientation="horizontal"
-                android:padding="20dp">
-
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="退出登录"
-                    android:textColor="@color/white"
-                    android:textSize="14sp" />
-
-                <View
-                    android:layout_width="0dp"
-                    android:layout_height="1dp"
-                    android:layout_weight="1"></View>
-
-                <ImageView
-                    android:layout_width="40dp"
-                    android:layout_height="40dp"
-                    android:scaleType="center"
-                    android:src="@mipmap/mine_right_arrow" />
-            </LinearLayout>
-
-        </LinearLayout>
     </ScrollView>
 
 

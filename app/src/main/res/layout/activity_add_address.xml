@@ -2,7 +2,7 @@
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/activity_back_color"
+    android:background="#F8F8F8"
     android:orientation="vertical">
 
     <LinearLayout
@@ -10,16 +10,26 @@
         android:layout_height="match_parent"
         android:orientation="vertical"
         >
+
         <RelativeLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:background="#FCB8DF"
             >
             <ImageView
                 android:id="@+id/addaddress_back"
-                android:layout_width="60dp"
-                android:layout_height="46dp"
+                android:layout_width="50dp"
+                android:layout_height="42dp"
                 android:scaleType="center"
-                android:src="@mipmap/submit_back" />
+                android:src="@mipmap/white_back" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:text="新增地址"
+                android:textColor="@color/white"
+                android:textSize="17sp" />
 
             <TextView
                 android:id="@+id/addaddress_delete"
@@ -35,18 +45,11 @@
                 />
         </RelativeLayout>
 
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginLeft="20dp"
-            android:text="新增地址"
-            android:textColor="@color/white"
-            android:textSize="26sp" />
-
         <LinearLayout
             android:id="@+id/addaddress_name_layout"
             style="@style/addddress_layout_style"
-            android:layout_marginTop="50dp">
+            android:layout_marginTop="10dp"
+            >
 
             <TextView
                 style="@style/addaddress_text_style"
@@ -122,7 +125,7 @@
 
         <TextView
             android:id="@+id/addaddress_save"
-            style="@style/textview_button_style_small"
+            style="@style/smallbutton_style"
             android:layout_gravity="center_horizontal"
             android:layout_marginBottom="40dp"
             android:text="保存"
