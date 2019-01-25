@@ -63,7 +63,7 @@
     <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent">
-        <com.verify.photo.view.view.recycleview.swipetoloadlayout.SwipeToLoadLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        <com.shcy.yyzzj.view.view.recycleview.swipetoloadlayout.SwipeToLoadLayout xmlns:android="http://schemas.android.com/apk/res/android"
 
             xmlns:app="http://schemas.android.com/apk/res-auto"
             android:id="@+id/swipeToLoadLayout"
@@ -84,7 +84,7 @@
             <include
                 android:id="@+id/swipe_load_more_footer"
                 layout="@layout/layout_twitter_footer" />
-        </com.verify.photo.view.view.recycleview.swipetoloadlayout.SwipeToLoadLayout>
+        </com.shcy.yyzzj.view.view.recycleview.swipetoloadlayout.SwipeToLoadLayout>
 
         <TextView
             android:id="@+id/search_nodata"

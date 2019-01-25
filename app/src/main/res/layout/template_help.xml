@@ -4,13 +4,15 @@
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
     android:background="@color/white"
-    android:orientation="vertical"
-    android:padding="19dp">
+    android:orientation="vertical">
 
     <LinearLayout
         android:id="@+id/template_help_questionlayout"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_marginLeft="19dp"
+        android:layout_marginRight="19dp"
+        android:layout_marginTop="19dp"
         android:gravity="center_vertical"
         android:orientation="horizontal">
 
@@ -36,10 +38,12 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="15dp"
+        android:layout_marginLeft="19dp"
+        android:layout_marginRight="19dp"
         android:background="@drawable/help_answer_back"
         android:orientation="horizontal"
         android:padding="15dp"
-        android:visibility="visible">
+        android:visibility="gone">
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -97,4 +101,11 @@
         </LinearLayout>
 
     </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:layout_marginTop="19dp"
+        android:background="#656F96"
+        ></View>
 </LinearLayout>

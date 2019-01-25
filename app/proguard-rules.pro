@@ -290,8 +290,8 @@
     public static ** valueOf(java.lang.String);
 }
 
--keep class com.verify.photo.bean.**{ *; }
--keep class com.verify.photo.config.**{ *; }
+-keep class shcy.photo.bean.**{ *; }
+-keep class shcy.photo.config.**{ *; }
 
 -ignorewarning                 # 是否忽略检测，（是）
 -optimizationpasses 5          # 指定代码的压缩级别
@@ -357,7 +357,7 @@
 -keep class com.ta.utdid2.** { *;}
 -keep class com.ut.device.** { *;}
 
--keep public class [com.verify.photo].R$*{
+-keep public class [shcy.photo].R$*{
 public static final int *;
 }
 -keep class com.umeng.commonsdk.** {*;}

@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.verify.photo">
+    package="com.shcy.yyzzj">
 
     <uses-permission android:name="android.permission.INTERNET" />
     <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
@@ -15,7 +15,7 @@
 
     <!-- Required -->
     <permission
-        android:name="com.verify.photo.permission.JPUSH_MESSAGE"
+        android:name="com.shcy.yyzzj.permission.JPUSH_MESSAGE"
         android:protectionLevel="signature" />
 
     <!-- Required  一些系统要求的权限，如访问网络等 -->
@@ -44,14 +44,14 @@
     <uses-feature android:name="android.hardware.camera" />
 
     <application
-        android:name=".activity.MyApplication"
+        android:name="com.shcy.yyzzj.activity.MyApplication"
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
         <activity
-            android:name=".module.splash.SplashActivity"
+            android:name="com.shcy.yyzzj.module.splash.SplashActivity"
             android:configChanges="orientation|screenSize|keyboardHidden|fontScale"
             android:screenOrientation="portrait"
             android:theme="@style/Theme.AppCompat.NoActionBar">
@@ -62,67 +62,67 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".activity.MainActivity"
+            android:name="com.shcy.yyzzj.activity.MainActivity"
             android:configChanges="orientation|screenSize|keyboardHidden|fontScale"
             android:screenOrientation="portrait"
             android:theme="@style/Theme.AppCompat.NoActionBar" />
         <activity
-            android:name=".module.album.AlbumActivity"
+            android:name="com.shcy.yyzzj.module.album.AlbumActivity"
             android:configChanges="orientation|screenSize|keyboardHidden|fontScale"
             android:screenOrientation="portrait"
             android:theme="@style/Theme.AppCompat.NoActionBar" />
         <activity
-            android:name=".module.selectsize.SelectSizeActivity"
+            android:name="com.shcy.yyzzj.module.selectsize.SelectSizeActivity"
             android:configChanges="orientation|screenSize|keyboardHidden|fontScale"
             android:windowSoftInputMode="stateAlwaysHidden"
             android:screenOrientation="portrait"
             android:theme="@style/Theme.AppCompat.NoActionBar" />
         <activity
-            android:name=".module.editphoto.EditPhotoActivity"
+            android:name="com.shcy.yyzzj.module.editphoto.EditPhotoActivity"
             android:configChanges="orientation|screenSize|keyboardHidden|fontScale"
             android:screenOrientation="portrait"
             android:theme="@style/Theme.AppCompat.NoActionBar" />
         <activity
-            android:name=".module.orderlist.OrderListActivity"
+            android:name="com.shcy.yyzzj.module.orderlist.OrderListActivity"
             android:configChanges="orientation|screenSize|keyboardHidden|fontScale"
             android:screenOrientation="portrait"
             android:theme="@style/Theme.AppCompat.NoActionBar" />
         <activity
-            android:name=".module.preview.PreviewActivity"
+            android:name="com.shcy.yyzzj.module.preview.PreviewActivity"
             android:configChanges="orientation|screenSize|keyboardHidden|fontScale"
             android:screenOrientation="portrait"
             android:theme="@style/Theme.AppCompat.NoActionBar" />
         <activity
-            android:name=".module.pay.PayActivity"
+            android:name="com.shcy.yyzzj.module.pay.PayActivity"
             android:configChanges="orientation|screenSize|keyboardHidden|fontScale"
             android:screenOrientation="portrait"
             android:theme="@style/Theme.AppCompat.NoActionBar" />
         <activity
-            android:name=".module.printsubmit.PrintSubmitActivity"
+            android:name="com.shcy.yyzzj.module.printsubmit.PrintSubmitActivity"
             android:configChanges="orientation|screenSize|keyboardHidden|fontScale"
             android:screenOrientation="portrait"
             android:theme="@style/Theme.AppCompat.NoActionBar" />
         <activity
-            android:name=".module.login.LoginActivity"
+            android:name="com.shcy.yyzzj.module.login.LoginActivity"
             android:configChanges="orientation|screenSize|keyboardHidden|fontScale"
             android:screenOrientation="portrait"
             android:theme="@style/Theme.AppCompat.NoActionBar" />
         <activity
-            android:name=".module.mine.MineActivity"
+            android:name="com.shcy.yyzzj.module.mine.MineActivity"
             android:configChanges="orientation|screenSize|keyboardHidden|fontScale"
             android:screenOrientation="portrait"
             android:theme="@style/Theme.AppCompat.NoActionBar" />
         <activity
-            android:name=".module.camera.CameraActivity"
+            android:name="com.shcy.yyzzj.module.camera.CameraActivity"
             android:configChanges="orientation|screenSize|keyboardHidden|fontScale"
             android:screenOrientation="portrait"
             android:theme="@style/Theme.AppCompat.NoActionBar" />
         <activity
-            android:name=".wxapi.WXPayEntryActivity"
+            android:name="com.shcy.yyzzj.wxapi.WXPayEntryActivity"
             android:exported="true"
             android:launchMode="singleTop" />
         <activity
-            android:name=".module.addresslist.AddressActivity"
+            android:name="com.shcy.yyzzj.module.addresslist.AddressActivity"
             android:configChanges="orientation|screenSize|keyboardHidden|fontScale"
             android:screenOrientation="portrait"
             android:theme="@style/Theme.AppCompat.NoActionBar" />
@@ -139,27 +139,27 @@
             android:screenOrientation="behind"
             android:windowSoftInputMode="adjustResize|stateHidden" />
         <activity
-            android:name=".module.orderdetail.OrderDetailActivity"
+            android:name="com.shcy.yyzzj.module.orderdetail.OrderDetailActivity"
             android:configChanges="orientation|screenSize|keyboardHidden|fontScale"
             android:screenOrientation="portrait"
             android:theme="@style/Theme.AppCompat.NoActionBar" />
         <activity
-            android:name=".module.about.AboutActivity"
+            android:name="com.shcy.yyzzj.module.about.AboutActivity"
             android:configChanges="orientation|screenSize|keyboardHidden|fontScale"
             android:screenOrientation="portrait"
             android:theme="@style/Theme.AppCompat.NoActionBar" />
         <activity
-            android:name=".module.about.H5Activity"
+            android:name="com.shcy.yyzzj.module.about.H5Activity"
             android:configChanges="orientation|screenSize|keyboardHidden|fontScale"
             android:screenOrientation="portrait"
             android:theme="@style/Theme.AppCompat.NoActionBar" />
 
         <!-- APP 下载更新 -->
-        <service android:name=".module.update.UpdateAppService" />
+        <service android:name="com.shcy.yyzzj.module.update.UpdateAppService" />
 
         <provider
             android:name="android.support.v4.content.FileProvider"
-            android:authorities="com.verify.photo.fileProvider"
+            android:authorities="com.shcy.yyzzj.fileProvider"
             android:exported="false"
             android:grantUriPermissions="true">
             <meta-data
@@ -204,7 +204,7 @@
         <!-- since 3.0.9 Required SDK 核心功能 -->
         <provider
             android:name="cn.jpush.android.service.DataProvider"
-            android:authorities="com.verify.photo.DataProvider"
+            android:authorities="com.shcy.yyzzj.DataProvider"
             android:exported="false"
             android:process=":pushcore" />
 
@@ -234,7 +234,7 @@
         <!-- since 3.1.0 Required SDK 核心功能 -->
         <provider
             android:name="cn.jpush.android.service.DownloadProvider"
-            android:authorities="com.verify.photo.DownloadProvider"
+            android:authorities="com.shcy.yyzzj.DownloadProvider"
             android:exported="true" />
         <!-- Required SDK核心功能 -->
         <receiver
@@ -265,7 +265,7 @@
 
         <!-- User defined.  For test only  用户自定义的广播接收器 -->
         <receiver
-            android:name=".receiver.MyReceiver"
+            android:name="com.shcy.yyzzj.receiver.MyReceiver"
             android:enabled="true"
             android:exported="false">
             <intent-filter>
@@ -279,7 +279,7 @@
         </receiver>
 
         <!-- User defined.  For test only  用户自定义接收消息器,3.0.7开始支持,目前新tag/alias接口设置结果会在该广播接收器对应的方法中回调 -->
-        <receiver android:name=".receiver.MyJPushMessageReceiver">
+        <receiver android:name="com.shcy.yyzzj.receiver.MyJPushMessageReceiver">
             <intent-filter>
                 <action android:name="cn.jpush.android.intent.RECEIVE_MESSAGE" />
 
@@ -312,33 +312,33 @@
             android:configChanges="orientation|keyboardHidden|screenSize"
             android:theme="@android:style/Theme.Translucent.NoTitleBar" />
         <activity
-            android:name=".wxapi.WXEntryActivity"
+            android:name="com.shcy.yyzzj.wxapi.WXEntryActivity"
             android:configChanges="keyboardHidden|orientation|screenSize"
             android:exported="true"
             android:theme="@android:style/Theme.Translucent.NoTitleBar" />
         <activity
-            android:name=".module.addressadd.AddAddressActivity"
+            android:name="com.shcy.yyzzj.module.addressadd.AddAddressActivity"
             android:configChanges="orientation|screenSize|keyboardHidden|fontScale"
             android:screenOrientation="portrait"
             android:theme="@style/Theme.AppCompat.NoActionBar" />
         <activity
-            android:name=".module.printpay.PrintPayActivity"
+            android:name="com.shcy.yyzzj.module.printpay.PrintPayActivity"
             android:configChanges="orientation|screenSize|keyboardHidden|fontScale"
             android:screenOrientation="portrait"
             android:theme="@style/Theme.AppCompat.NoActionBar" />
 
-        <activity android:name=".module.search.SearchActivity"
+        <activity android:name="com.shcy.yyzzj.module.search.SearchActivity"
             android:configChanges="orientation|screenSize|keyboardHidden|fontScale"
             android:screenOrientation="portrait"
             android:windowSoftInputMode="adjustPan"
             android:theme="@style/Theme.AppCompat.NoActionBar"/>
 
-        <activity android:name=".module.camera.PictrueConfirmActivity"
+        <activity android:name="com.shcy.yyzzj.module.camera.PictrueConfirmActivity"
             android:configChanges="orientation|screenSize|keyboardHidden|fontScale"
             android:screenOrientation="portrait"
             android:theme="@style/Theme.AppCompat.NoActionBar"/>
 
-        <activity android:name=".module.help.HelpActivity"
+        <activity android:name="com.shcy.yyzzj.module.help.HelpActivity"
             android:configChanges="orientation|screenSize|keyboardHidden|fontScale"
             android:screenOrientation="portrait"
             android:theme="@style/Theme.AppCompat.NoActionBar"/>

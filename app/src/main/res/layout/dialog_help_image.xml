@@ -5,7 +5,7 @@
     xmlns:fresco="http://schemas.android.com/apk/res-auto"
     android:background="@color/black">
 
-    <com.verify.photo.view.ZoomableDraweeView
+    <com.shcy.yyzzj.view.ZoomableDraweeView
         android:id="@+id/order_photo_dialog_photo"
         android:layout_width="400dp"
         android:layout_height="500dp"
