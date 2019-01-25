@@ -11,16 +11,14 @@
         android:layout_height="match_parent"
         android:gravity="center_horizontal"
         android:orientation="vertical"
-        android:visibility="visible"
-        >
+        android:visibility="visible">
 
         <RelativeLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:gravity="center_vertical"
-            android:orientation="horizontal"
             android:background="#FCB8DF"
-            >
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
 
             <ImageView
                 android:id="@+id/preview_back"
@@ -164,11 +162,11 @@
             android:layout_height="wrap_content"
             android:layout_marginLeft="24dp"
             android:layout_marginRight="24dp"
-            android:paddingBottom="20dp"
-            android:orientation="vertical"
-            android:gravity="center"
             android:background="@drawable/mainpage_layout_back"
-            >
+            android:gravity="center"
+            android:orientation="vertical"
+            android:paddingBottom="20dp">
+
             <ImageView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -230,8 +228,8 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="30dp"
-            android:orientation="vertical"
             android:gravity="center"
+            android:orientation="vertical"
             android:padding="15dp">
 
             <TextView
@@ -245,8 +243,7 @@
                 android:id="@+id/submit_pay_success_tomianpage"
                 style="@style/bigbutton_circle_style"
                 android:layout_marginTop="10dp"
-                android:text="返回首页"
-                />
+                android:text="返回首页" />
         </LinearLayout>
     </LinearLayout>
 

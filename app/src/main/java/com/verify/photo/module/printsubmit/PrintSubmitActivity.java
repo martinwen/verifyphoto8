@@ -69,12 +69,12 @@ public class PrintSubmitActivity extends Activity implements View.OnClickListene
     private PrintPayBean printPayBean;
     private TextView payBtn, expressPriceText, expressDetail,
             expressPriceJiText, printCountText, orderAmount1, orderAmount2, firstPrintPrice,
-            addPrintAmoutPrice, expressPrice, noticeText,
+            addPrintAmoutPrice, expressPrice, noticeText, viewOrder, toMainpage,
             addressName, addressMobile, addressDetail, addPrintPrice, photoname, includeconut;
     private ImageView back, addAdress, expressImage, expressJiImage, addPrintCount,
-            delPrintCount, noticeClose, noticeArrow, viewOrder, toMainpage;
-    private LinearLayout addAddressLayout, noticeLayout;
-    private RelativeLayout addressLayout, submitLayout, paySuccessLayout;
+            delPrintCount, noticeClose, noticeArrow;
+    private LinearLayout addAddressLayout, noticeLayout, paySuccessLayout;
+    private RelativeLayout addressLayout, submitLayout;
     private SimpleDraweeView photo;
 
     private TextView paySuccessAmout, paySuccessOrderNum, paySuccessTime;
@@ -161,12 +161,12 @@ public class PrintSubmitActivity extends Activity implements View.OnClickListene
         includeconut = findViewById(R.id.printsubmit_includecount);
 
         submitLayout = findViewById(R.id.printsubmit_layout);
-        paySuccessLayout = findViewById(R.id.printpay_paysuccess_layout);
-        paySuccessAmout = findViewById(R.id.printpay_pay_success_amout);
-        paySuccessOrderNum = findViewById(R.id.printpay_pay_success_order_num);
-        paySuccessTime = findViewById(R.id.printpay_pay_success_order_paytime);
-        toMainpage = findViewById(R.id.printpay_pay_success_tomianpage);
-        viewOrder = findViewById(R.id.printpay_pay_success_vieworder);
+        paySuccessLayout = findViewById(R.id.submit_paysuccess_layout);
+        paySuccessAmout = findViewById(R.id.submit_pay_success_amout);
+        paySuccessOrderNum = findViewById(R.id.submit_pay_success_order_num);
+        paySuccessTime = findViewById(R.id.submit_pay_success_order_paytime);
+        toMainpage = findViewById(R.id.submit_pay_success_tomianpage);
+        viewOrder = findViewById(R.id.submit_pay_success_vieworder);
 
         noticeLayout = findViewById(R.id.printsubmit_notice_layout);
         noticeClose = findViewById(R.id.printsubmit_notice_close);

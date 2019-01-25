@@ -3,15 +3,14 @@
     xmlns:fresco="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/black"
+    android:background="#F8F8F8"
     android:orientation="vertical">
 
     <RelativeLayout
         android:id="@+id/printsubmit_layout"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:visibility="visible"
-        >
+        android:visibility="visible">
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -20,14 +19,15 @@
 
             <RelativeLayout
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content">
+                android:layout_height="wrap_content"
+                android:background="#FCB8DF">
 
                 <ImageView
                     android:id="@+id/submit_back"
-                    android:layout_width="60dp"
-                    android:layout_height="46dp"
+                    android:layout_width="50dp"
+                    android:layout_height="42dp"
                     android:scaleType="center"
-                    android:src="@mipmap/submit_back" />
+                    android:src="@mipmap/white_back" />
 
                 <TextView
                     android:id="@+id/order_detail_title"
@@ -69,7 +69,7 @@
                     android:layout_width="44dp"
                     android:layout_height="44dp"
                     android:scaleType="center"
-                    android:src="@mipmap/mine_right_arrow" />
+                    android:src="@mipmap/printsubmit_tip_arrow" />
 
             </LinearLayout>
 
@@ -77,10 +77,8 @@
                 android:id="@+id/printsubmit_addaddress_layout"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginLeft="20dp"
-                android:layout_marginRight="20dp"
-                android:layout_marginTop="20dp"
-                android:background="@drawable/mine_layout_bg"
+                android:layout_marginTop="10dp"
+                android:background="@color/white"
                 android:gravity="center"
                 android:orientation="vertical">
 
@@ -96,20 +94,18 @@
                     android:id="@+id/printsubmit_address_layout"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:background="@drawable/mine_layout_bg"
-                    android:paddingBottom="10dp"
                     android:paddingLeft="10dp"
+                    android:paddingTop="10dp"
                     android:paddingRight="5dp"
-                    android:paddingTop="10dp">
+                    android:paddingBottom="10dp">
 
                     <LinearLayout
                         android:id="@+id/layout2"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_marginRight="60dp"
-                        android:orientation="horizontal"
                         android:gravity="center_vertical"
-                        >
+                        android:orientation="horizontal">
 
                         <TextView
                             android:id="@+id/printsubmit_address_name"
@@ -118,7 +114,7 @@
                             android:layout_alignParentStart="true"
                             android:layout_alignParentTop="true"
                             android:layout_weight="1"
-                            android:textColor="@color/white"
+                            android:textColor="@color/black"
                             android:textSize="14sp" />
 
                         <TextView
@@ -126,21 +122,19 @@
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:layout_marginLeft="15dp"
-                            android:textColor="@color/white"
-                            android:textSize="14sp"
-                            />
+                            android:textColor="@color/black"
+                            android:textSize="14sp" />
                     </LinearLayout>
 
                     <TextView
                         android:id="@+id/printsubmit_address_address"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:layout_marginRight="60dp"
                         android:layout_below="@id/layout2"
                         android:layout_marginTop="10dp"
-                        android:textColor="@color/white"
-                        android:textSize="14sp"
-                        />
+                        android:layout_marginRight="60dp"
+                        android:textColor="@color/black"
+                        android:textSize="14sp" />
 
                     <ImageView
                         android:id="@+id/printsubmit_address_edit"
@@ -152,21 +146,20 @@
                         android:src="@mipmap/mine_right_arrow" />
 
                 </RelativeLayout>
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="5dp"
+                    android:background="@mipmap/addressline" />
             </LinearLayout>
 
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="25dp"
+                android:layout_marginTop="10dp"
+                android:background="@color/white"
                 android:orientation="horizontal"
-                android:paddingTop="10dp"
-                android:paddingBottom="10dp"
-                android:paddingLeft="10dp"
-                android:paddingRight="10dp"
-                android:layout_marginLeft="20dp"
-                android:layout_marginRight="20dp"
-                android:background="@drawable/mine_layout_bg"
-                >
+                android:padding="20dp">
 
                 <com.facebook.drawee.view.SimpleDraweeView
                     android:id="@+id/printsubmit_photo"
@@ -187,7 +180,7 @@
                         android:id="@+id/printsubmit_photoname"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:textColor="@color/white"
+                        android:textColor="@color/black"
                         android:textSize="15sp" />
 
                     <TextView
@@ -208,8 +201,7 @@
                             android:id="@+id/printsubmit_amount1"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:textColor="#FF5555"
-                            />
+                            android:textColor="#FF5555" />
 
                         <View
                             android:layout_width="0dp"
@@ -220,7 +212,7 @@
                             android:id="@+id/printsubmit_addprintcount_price"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:textColor="@color/white"
+                            android:textColor="@color/black"
                             android:textSize="9dp" />
 
                         <ImageView
@@ -236,7 +228,7 @@
                             android:layout_height="wrap_content"
                             android:layout_marginLeft="10dp"
                             android:text="1"
-                            android:textColor="@color/white"
+                            android:textColor="@color/black"
                             android:textSize="15sp" />
 
                         <ImageView
@@ -252,26 +244,21 @@
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:background="@color/white"
                 android:orientation="vertical"
-                android:layout_marginLeft="20dp"
-                android:layout_marginRight="20dp"
-                android:paddingBottom="10dp"
-                android:paddingTop="10dp"
-                android:layout_marginTop="25dp"
-                android:background="@drawable/mine_layout_bg"
-                >
+                android:padding="20dp">
+
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:orientation="horizontal"
-                    android:paddingLeft="10dp"
-                    android:paddingRight="10dp">
+                    android:orientation="horizontal">
 
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="配送方式"
-                        android:textColor="@color/white"
+                        android:textColor="@color/black"
                         android:textSize="13sp" />
 
                     <View
@@ -297,9 +284,7 @@
                     android:layout_marginTop="15dp"
                     android:gravity="center_vertical"
                     android:orientation="horizontal"
-                    android:paddingLeft="10dp"
                     android:paddingTop="3dp"
-                    android:paddingRight="10dp"
                     android:paddingBottom="3dp">
 
                     <ImageView
@@ -312,7 +297,7 @@
                         android:layout_width="110dp"
                         android:layout_height="wrap_content"
                         android:layout_marginLeft="20dp"
-                        android:textColor="@color/white"
+                        android:textColor="@color/black"
                         android:textSize="13sp" />
 
                     <TextView
@@ -342,9 +327,7 @@
                     android:layout_marginTop="10dp"
                     android:gravity="center_vertical"
                     android:orientation="horizontal"
-                    android:paddingLeft="10dp"
                     android:paddingTop="3dp"
-                    android:paddingRight="10dp"
                     android:paddingBottom="3dp">
 
                     <ImageView
@@ -357,7 +340,7 @@
                         android:layout_width="110dp"
                         android:layout_height="wrap_content"
                         android:layout_marginLeft="20dp"
-                        android:textColor="@color/white"
+                        android:textColor="@color/black"
                         android:textSize="13sp" />
 
                     <TextView
@@ -381,15 +364,13 @@
                 </LinearLayout>
             </LinearLayout>
 
-
-
         </LinearLayout>
 
         <RelativeLayout
             android:layout_width="match_parent"
             android:layout_height="48dp"
             android:layout_alignParentBottom="true"
-            android:background="#27325E"
+            android:background="@color/white"
             android:orientation="horizontal"
             android:paddingLeft="15dp">
 
@@ -398,7 +379,7 @@
                 android:layout_width="100dp"
                 android:layout_height="match_parent"
                 android:layout_alignParentRight="true"
-                android:background="@drawable/print_paybutton_back"
+                android:background="#FA75C4"
                 android:gravity="center"
                 android:text="立即支付"
                 android:textColor="@color/white"
@@ -410,7 +391,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginTop="5dp"
                 android:text="订单金额"
-                android:textColor="@color/white"
+                android:textColor="@color/black"
                 android:textSize="13sp" />
 
             <TextView
@@ -437,8 +418,8 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_alignParentBottom="true"
-                android:layout_marginBottom="5dp"
                 android:layout_marginLeft="15dp"
+                android:layout_marginBottom="5dp"
                 android:layout_toRightOf="@id/printpay_first_price"
                 android:textColor="@color/login_hint"
                 android:textSize="11sp" />
@@ -448,35 +429,42 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_alignParentBottom="true"
-                android:layout_marginBottom="5dp"
                 android:layout_marginLeft="15dp"
+                android:layout_marginBottom="5dp"
                 android:layout_toRightOf="@id/printpay_addconut_price"
                 android:textColor="@color/login_hint"
                 android:textSize="11sp" />
         </RelativeLayout>
     </RelativeLayout>
 
-    <RelativeLayout
-        android:id="@+id/printpay_paysuccess_layout"
+    <LinearLayout
+        android:id="@+id/submit_paysuccess_layout"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:visibility="gone"
-        >
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:gravity="center_horizontal"
+        android:orientation="vertical"
+        android:paddingLeft="15dp"
+        android:paddingTop="30dp"
+        android:paddingRight="15dp"
+        android:paddingBottom="30dp"
+        android:visibility="gone">
 
         <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:gravity="center_horizontal"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="24dp"
+            android:layout_marginRight="24dp"
+            android:background="@drawable/mainpage_layout_back"
+            android:gravity="center"
             android:orientation="vertical"
-            android:paddingLeft="15dp"
-            android:paddingTop="30dp"
-            android:paddingRight="15dp"
-            android:paddingBottom="30dp">
+            android:paddingBottom="20dp">
 
             <ImageView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="80dp"
+                android:layout_marginTop="40dp"
                 android:src="@mipmap/submit_pay_success" />
 
             <TextView
@@ -484,11 +472,11 @@
                 android:layout_height="wrap_content"
                 android:layout_marginTop="15dp"
                 android:text="支付成功"
-                android:textColor="@color/white"
+                android:textColor="@color/black"
                 android:textSize="20sp" />
 
             <TextView
-                android:id="@+id/printpay_pay_success_amout"
+                android:id="@+id/submit_pay_success_amout"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="20dp"
@@ -497,23 +485,23 @@
                 android:textSize="17sp" />
 
             <TextView
-                android:id="@+id/printpay_pay_success_order_num"
+                android:id="@+id/submit_pay_success_order_num"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="50dp"
+                android:layout_marginTop="30dp"
                 android:gravity="center"
                 android:text="订单编号："
-                android:textColor="@color/white"
+                android:textColor="@color/black"
                 android:textSize="12sp" />
 
             <TextView
-                android:id="@+id/printpay_pay_success_order_paytime"
+                android:id="@+id/submit_pay_success_order_paytime"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="20dp"
                 android:gravity="center"
                 android:text="支付时间："
-                android:textColor="@color/white"
+                android:textColor="@color/black"
                 android:textSize="12sp" />
 
             <TextView
@@ -523,35 +511,34 @@
                 android:gravity="center"
                 android:text="图片已保存至\n系统相册和APP中我的相册"
                 android:textColor="@color/login_hint"
-                android:visibility="gone"
+                android:visibility="gone" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="1dp"
+            android:layout_height="0dp"
+            android:layout_weight="1"></View>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:padding="15dp">
+
+            <TextView
+                android:id="@+id/submit_pay_success_vieworder"
+                style="@style/bigbutton_style"
+                android:text="查看订单"
                 />
 
-            <View
-                android:layout_width="1dp"
-                android:layout_height="0dp"
-                android:layout_weight="1"></View>
-
-            <RelativeLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="30dp"
-                android:padding="15dp">
-
-                <ImageView
-                    android:id="@+id/printpay_pay_success_tomianpage"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_alignParentLeft="true"
-                    android:src="@mipmap/submit_to_mainpage" />
-
-                <ImageView
-                    android:id="@+id/printpay_pay_success_vieworder"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_alignParentRight="true"
-                    android:src="@mipmap/submit_view_order" />
-            </RelativeLayout>
+            <TextView
+                android:id="@+id/submit_pay_success_tomianpage"
+                style="@style/bigbutton_circle_style"
+                android:layout_marginTop="10dp"
+                android:text="返回首页" />
         </LinearLayout>
-    </RelativeLayout>
+    </LinearLayout>
 
 </RelativeLayout>
