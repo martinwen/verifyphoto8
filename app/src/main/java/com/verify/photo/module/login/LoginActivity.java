@@ -35,8 +35,8 @@ public class LoginActivity extends Activity implements View.OnClickListener, Log
     private ImageView back;
     private LinearLayout loginLayout, verifyLayout;
     private EditText phoneNum, verifyCode;
-    private TextView agreenment, timeText, verifyPhone, code1, code2, code3, code4;
-    private ImageView deletePhoneNum, loginBtn;
+    private TextView agreenment, timeText, verifyPhone, code1, code2, code3, code4, loginBtn;
+    private ImageView deletePhoneNum;
     private Timer timer = new Timer();
     private int time = 60;
     private long pauseTime = 0;
@@ -94,11 +94,11 @@ public class LoginActivity extends Activity implements View.OnClickListener, Log
             public void afterTextChanged(Editable s) {
                 if (phoneNum.getText().length() == 11) {
                     loginBtn.setClickable(true);
-                    loginBtn.setImageResource(R.mipmap.login_btn);
+                    loginBtn.setBackground(getDrawable(R.drawable.bigbutton_back));
                     deletePhoneNum.setVisibility(View.VISIBLE);
                 } else {
                     loginBtn.setClickable(false);
-                    loginBtn.setImageResource(R.mipmap.login_btn_un);
+                    loginBtn.setBackground(getDrawable(R.drawable.bigbutton_un_back));
                     deletePhoneNum.setVisibility(View.GONE);
                 }
             }
@@ -138,7 +138,7 @@ public class LoginActivity extends Activity implements View.OnClickListener, Log
             case R.id.login_user_argreenment:
                 Intent intent = new Intent(this, H5Activity.class);
                 intent.putExtra(URL, Constants.AGREEMENT_URL);
-                intent.putExtra(TITLE,"关于我们");
+                intent.putExtra(TITLE, "关于我们");
                 startActivity(intent);
                 break;
             case R.id.login_phone_delete:
@@ -266,7 +266,7 @@ public class LoginActivity extends Activity implements View.OnClickListener, Log
     }
 
     private void setCodeText(String codeText) {
-        switch (codeText.length()){
+        switch (codeText.length()) {
             case 1:
                 code1.setText(codeText);
                 code2.setText("");
@@ -274,22 +274,22 @@ public class LoginActivity extends Activity implements View.OnClickListener, Log
                 code4.setText("");
                 break;
             case 2:
-                code1.setText(codeText.substring(0,1));
-                code2.setText(codeText.substring(1,2));
+                code1.setText(codeText.substring(0, 1));
+                code2.setText(codeText.substring(1, 2));
                 code3.setText("");
                 code4.setText("");
                 break;
             case 3:
-                code1.setText(codeText.substring(0,1));
-                code2.setText(codeText.substring(1,2));
-                code3.setText(codeText.substring(2,3));
+                code1.setText(codeText.substring(0, 1));
+                code2.setText(codeText.substring(1, 2));
+                code3.setText(codeText.substring(2, 3));
                 code4.setText("");
                 break;
             case 4:
-                code1.setText(codeText.substring(0,1));
-                code2.setText(codeText.substring(1,2));
-                code3.setText(codeText.substring(2,3));
-                code4.setText(codeText.substring(3,4));
+                code1.setText(codeText.substring(0, 1));
+                code2.setText(codeText.substring(1, 2));
+                code3.setText(codeText.substring(2, 3));
+                code4.setText(codeText.substring(3, 4));
 
                 break;
             default:
