@@ -1,35 +1,36 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:orientation="vertical"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/activity_back_color"
-    >
+    android:orientation="vertical">
 
-    <ImageView
-        android:id="@+id/help_back"
-        android:layout_width="30dp"
-        android:layout_height="20dp"
-        android:layout_marginLeft="20dp"
-        android:layout_marginTop="20dp"
-        android:scaleType="center"
-        android:src="@mipmap/album_back" />
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="42dp"
+        android:background="#FCB8DF">
 
-    <TextView
-        android:id="@+id/help_title"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginLeft="20dp"
-        android:layout_marginTop="15dp"
-        android:text="帮助"
-        android:textColor="@color/white"
-        android:textSize="31sp" />
+        <ImageView
+            android:id="@+id/help_back"
+            android:layout_width="50dp"
+            android:layout_height="match_parent"
+            android:scaleType="center"
+            android:src="@mipmap/white_back" />
+
+        <TextView
+            android:id="@+id/help_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="帮助"
+            android:textColor="@color/white"
+            android:textSize="17sp" />
+    </RelativeLayout>
 
     <android.support.v7.widget.RecyclerView
         android:id="@+id/help_list"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:layout_marginTop="15dp"
-        ></android.support.v7.widget.RecyclerView>
+        android:layout_marginTop="10dp"></android.support.v7.widget.RecyclerView>
 
 </LinearLayout>
