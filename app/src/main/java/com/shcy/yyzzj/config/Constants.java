@@ -117,7 +117,7 @@ public class Constants {
         return new UUID(m_szDevIDShort.hashCode(), serial.hashCode()).toString();
     }
 
-    public static String SDCARD_PATH = Environment.getExternalStorageDirectory() + "/verifyphoto/"; //存储SD卡路径
+    public static String SDCARD_PATH = Environment.getExternalStorageDirectory() + "/yyzzj/"; //存储SD卡路径
 //    public static String SDCARD_PATH_DOWNLOAD_APK = SDCARD_PATH + "forknews_"+ SetUtils.getInstance().getBuildNo()+".apk"; //存储SD卡路径 forknew_1.apk
 
 

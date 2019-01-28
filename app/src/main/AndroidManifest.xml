@@ -19,7 +19,7 @@
         android:protectionLevel="signature" />
 
     <!-- Required  一些系统要求的权限，如访问网络等 -->
-    <uses-permission android:name="com.verify.photo.permission.JPUSH_MESSAGE" />
+    <uses-permission android:name="com.com.shcy.yyzzj.permission.JPUSH_MESSAGE" />
     <uses-permission android:name="android.permission.RECEIVE_USER_PRESENT" />
     <uses-permission android:name="android.permission.INTERNET" />
     <uses-permission android:name="android.permission.READ_PHONE_STATE" />
@@ -74,9 +74,9 @@
         <activity
             android:name="com.shcy.yyzzj.module.selectsize.SelectSizeActivity"
             android:configChanges="orientation|screenSize|keyboardHidden|fontScale"
-            android:windowSoftInputMode="stateAlwaysHidden"
             android:screenOrientation="portrait"
-            android:theme="@style/Theme.AppCompat.NoActionBar" />
+            android:theme="@style/Theme.AppCompat.NoActionBar"
+            android:windowSoftInputMode="stateAlwaysHidden" />
         <activity
             android:name="com.shcy.yyzzj.module.editphoto.EditPhotoActivity"
             android:configChanges="orientation|screenSize|keyboardHidden|fontScale"
@@ -184,7 +184,7 @@
                 <action android:name="cn.jpush.android.ui.PushActivity" />
 
                 <category android:name="android.intent.category.DEFAULT" />
-                <category android:name="com.verify.photo" />
+                <category android:name="com.shcy.yyzzj" />
             </intent-filter>
         </activity>
 
@@ -217,7 +217,7 @@
             <intent-filter>
                 <action android:name="cn.jpush.android.intent.DaemonService" />
 
-                <category android:name="com.verify.photo" />
+                <category android:name="com.shcy.yyzzj" />
             </intent-filter>
         </service>
 
@@ -228,7 +228,7 @@
             android:theme="@style/MyDialogStyle">
             <intent-filter>
                 <category android:name="android.intent.category.DEFAULT" />
-                <category android:name="com.verify.photo" />
+                <category android:name="com.shcy.yyzzj" />
             </intent-filter>
         </activity>
         <!-- since 3.1.0 Required SDK 核心功能 -->
@@ -243,7 +243,7 @@
             android:exported="false">
             <intent-filter android:priority="1000">
                 <action android:name="cn.jpush.android.intent.NOTIFICATION_RECEIVED_PROXY" /> <!-- Required  显示通知栏 -->
-                <category android:name="com.verify.photo" />
+                <category android:name="com.shcy.yyzzj" />
             </intent-filter>
             <intent-filter>
                 <action android:name="android.intent.action.USER_PRESENT" />
@@ -274,7 +274,7 @@
                 <action android:name="cn.jpush.android.intent.NOTIFICATION_RECEIVED" /> <!-- Required  用户接收SDK通知栏信息的intent -->
                 <action android:name="cn.jpush.android.intent.NOTIFICATION_OPENED" /> <!-- Required  用户打开自定义通知栏的intent -->
                 <action android:name="cn.jpush.android.intent.CONNECTION" /> <!-- 接收网络变化 连接/断开 since 1.6.3 -->
-                <category android:name="com.verify.photo" />
+                <category android:name="com.shcy.yyzzj" />
             </intent-filter>
         </receiver>
 
@@ -283,7 +283,7 @@
             <intent-filter>
                 <action android:name="cn.jpush.android.intent.RECEIVE_MESSAGE" />
 
-                <category android:name="com.verify.photo" />
+                <category android:name="com.shcy.yyzzj" />
             </intent-filter>
         </receiver>
         <!-- Required  . Enable it you can get statistics data with channel -->
@@ -327,21 +327,24 @@
             android:screenOrientation="portrait"
             android:theme="@style/Theme.AppCompat.NoActionBar" />
 
-        <activity android:name="com.shcy.yyzzj.module.search.SearchActivity"
+        <activity
+            android:name="com.shcy.yyzzj.module.search.SearchActivity"
             android:configChanges="orientation|screenSize|keyboardHidden|fontScale"
             android:screenOrientation="portrait"
-            android:windowSoftInputMode="adjustPan"
-            android:theme="@style/Theme.AppCompat.NoActionBar"/>
+            android:theme="@style/Theme.AppCompat.NoActionBar"
+            android:windowSoftInputMode="adjustPan" />
 
-        <activity android:name="com.shcy.yyzzj.module.camera.PictrueConfirmActivity"
+        <activity
+            android:name="com.shcy.yyzzj.module.camera.PictrueConfirmActivity"
             android:configChanges="orientation|screenSize|keyboardHidden|fontScale"
             android:screenOrientation="portrait"
-            android:theme="@style/Theme.AppCompat.NoActionBar"/>
+            android:theme="@style/Theme.AppCompat.NoActionBar" />
 
-        <activity android:name="com.shcy.yyzzj.module.help.HelpActivity"
+        <activity
+            android:name="com.shcy.yyzzj.module.help.HelpActivity"
             android:configChanges="orientation|screenSize|keyboardHidden|fontScale"
             android:screenOrientation="portrait"
-            android:theme="@style/Theme.AppCompat.NoActionBar"/>
+            android:theme="@style/Theme.AppCompat.NoActionBar" />
     </application>
 
 </manifest>
