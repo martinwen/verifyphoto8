@@ -175,26 +175,36 @@
             android:orientation="vertical"
             android:padding="15dp">
 
-            <RelativeLayout
+            <LinearLayout
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content">
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
 
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_alignParentLeft="true"
+                    android:layout_marginRight="5dp"
                     android:text="订单编号"
                     android:textColor="@color/login_hint"
                     android:textSize="12sp" />
 
                 <TextView
                     android:id="@+id/order_detail_ordernum"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="right"
+                    android:textColor="@color/login_hint"
+                    android:textSize="12sp" />
+
+                <TextView
+                    android:id="@+id/order_ordernum_copy"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_alignParentRight="true"
-                    android:textColor="@color/login_hint"
-                    android:textSize="12sp" />
-            </RelativeLayout>
+                    android:text="复制"
+                    android:textColor="#E88AFD" />
+            </LinearLayout>
 
             <RelativeLayout
                 android:layout_width="match_parent"
@@ -435,6 +445,7 @@
             android:layout_width="match_parent"
             android:layout_height="0dp"
             android:layout_weight="1"
+            android:paddingRight="30dp"
             android:gravity="center_vertical|right">
 
             <LinearLayout
@@ -466,6 +477,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_gravity="bottom"
+            android:layout_marginBottom="15dp"
             android:gravity="center"
             android:orientation="horizontal">
 
@@ -551,12 +563,15 @@
                 android:textSize="12sp" />
 
             <TextView
+                android:id="@+id/save_success"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="20dp"
                 android:gravity="center"
                 android:text="图片已保存至\n系统相册和APP中我的相册"
-                android:textColor="@color/login_hint" />
+                android:textColor="@color/login_hint"
+                android:visibility="gone"
+                />
         </LinearLayout>
 
         <View

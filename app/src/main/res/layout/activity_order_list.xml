@@ -10,7 +10,7 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:orientation="vertical"
-        android:visibility="gone"
+        android:visibility="visible"
         >
 
         <RelativeLayout
@@ -151,7 +151,9 @@
                 android:layout_marginTop="20dp"
                 android:gravity="center"
                 android:text="图片已保存至\n系统相册和APP中我的相册"
-                android:textColor="@color/login_hint" />
+                android:textColor="@color/login_hint"
+                android:visibility="gone"
+                />
         </LinearLayout>
 
         <View

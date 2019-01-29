@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">证件照相机</string>
+    <string name="app_name">四六级英语证件照</string>
     <string name="picture">Picture</string>
     <string name="description_info">Info</string>
     <string name="request_permission">This sample needs camera permission.</string>

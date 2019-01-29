@@ -15,8 +15,8 @@ public class PhotoDialog extends Dialog implements OnClickListener {
 
     private OnDialogClickListener onDialogClickListener;
     private TextView dialogContent;
-    private Button btn_confirm;
-    public static Button btn_cancel;
+    private TextView btn_confirm;
+    public static TextView btn_cancel;
     public static boolean isFoucus = true;//控制点击外部和返回键 dialog是否消失
 
     private PhotoDialog(Context context) {

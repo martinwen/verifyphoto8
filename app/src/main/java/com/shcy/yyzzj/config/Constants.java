@@ -19,8 +19,8 @@ public class Constants {
     /**
      * 主站域名
      */
-//    public static final String HOST_PHOTO_URL = "http://test.vp.lfork.com/";
-    public static final String HOST_PHOTO_URL = "http://vp.lfork.com/";
+//    public static final String HOST_PHOTO_URL = "http://test.api.zmzjzxj.com/";
+    public static final String HOST_PHOTO_URL = "http://api.zmzjzxj.com/";
     /**
      * 主站url
      */
@@ -34,13 +34,13 @@ public class Constants {
     /**
      * 推送
      */
-    public static final String WX_APPID = "wx147cfe4212d5eb8c";
-    public static final String WX_APPSCRET = "9dc0c02c8cc5ea4ff58b118ef1551d73";
-    public static final String UM_APPKEY = "5bc47d3df1f5568b62000176";
+    public static final String WX_APPID = "wxf0bb3f64bf56aa96";
+    public static final String WX_APPSCRET = "d1ca8941505789526e17af37b37bb797";
+    public static final String UM_APPKEY = "5c496941b465f5898d000560";
     public static final String QQ_APPID = "1107126681";
     public static final String QQ_APPKEY = "5RyKEICXHUrqYv2S";
-    public static final String JPUSH_APPKEY = "56b2d6893e291025b946db08";
-    public static final String JPUSH_APPSECRET = "b2bebef6a7ae6ecf6620d006";
+    public static final String JPUSH_APPKEY = "8d61c0c6fd659b7636768410";
+    public static final String JPUSH_APPSECRET = "6ad74545be3b8ec6413c8793";
 
 
     /**

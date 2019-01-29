@@ -35,7 +35,7 @@ public class EditPhotoColorTemplate extends BaseItemTempalte {
         View color = holder.getView(R.id.template_editphoto_color);
         if (bean.getChekedStatus() == 0){
             GradientDrawable drawable = new GradientDrawable();
-            drawable.setStroke(0,context.getResources().getColor(R.color.template_editphoto_color_stroke));
+            drawable.setStroke(3,context.getResources().getColor(R.color.template_search_selected_backgroud));
             drawable.setColor(Color.parseColor(bean.getColorTone()));
             drawable.setCornerRadius(DpPxUtils.dp2px(context,15));
             color.setBackground(drawable);

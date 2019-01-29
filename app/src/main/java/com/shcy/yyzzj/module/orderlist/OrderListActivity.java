@@ -175,13 +175,13 @@ public class OrderListActivity extends Activity implements View.OnClickListener,
                     }
                 }
                 break;
-            case R.id.printpay_pay_success_tomianpage:
+            case R.id.submit_pay_success_tomianpage:
                 Intent intent1 = new Intent();
                 intent1.setAction(BaseActivity.CLOSEACTIVITY_ACTION);
                 sendBroadcast(intent1);
                 finish();
                 break;
-            case R.id.printpay_pay_success_vieworder:
+            case R.id.submit_pay_success_vieworder:
                 Intent intent = new Intent(this, OrderDetailActivity.class);
                 intent.putExtra(PrintSubmitActivity.ORDER, list.get(payPosition));
                 startActivity(intent);
@@ -320,6 +320,7 @@ public class OrderListActivity extends Activity implements View.OnClickListener,
                     }
                 }, 1000);
             } else {
+                saveSuccess.setVisibility(View.GONE);
                 MobclickAgent.onEvent(this, Constants.EVENT_PRINT_PAYSUECCESS);
             }
         } else {

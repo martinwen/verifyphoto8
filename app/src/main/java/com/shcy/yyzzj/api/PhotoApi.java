@@ -36,43 +36,43 @@ import rx.Observable;
 
 public interface PhotoApi {
 
-    @GET("yyzzj/list")
+    @GET("photo/list")
     Observable<HttpResult<AlbumListBean>> getPhotoList(
             @Query("pageNo") int pageNo
     );
 
-    @GET("yyzzj/spec/list")
+    @GET("photo/spec/list")
     Observable<HttpResult<SelectSizeListBean>> getSpecList(
     );
 
-    @GET("yyzzj/spec/search")
+    @GET("photo/spec/search")
     Observable<HttpResult<SelectSizeListBean>> getSearchData(
             @Query("keyword") String keyword,
             @Query("pageNo") int pageNo
     );
 
-    @POST("yyzzj/preview")
+    @POST("photo/preview")
     Observable<HttpResult<PreviewPhotoListBean>> getPreviewPhoto(
             @Body JSONObject body
     );
 
-    @POST("yyzzj/print/preview")
+    @POST("photo/print/preview")
     Observable<HttpResult<PreviewPrintPhotoBean>> getPreviewPrintPhoto(
             @Body JSONObject body
     );
 
 
-    @POST("yyzzj/delete")
+    @POST("photo/delete")
     Observable<HttpResult<ResultBean>> deletePhoto(
             @Body JSONObject body
     );
 
-    @POST("yyzzj/submit")
+    @POST("photo/submit")
     Observable<HttpResult<Order>> submit(
             @Body JSONObject body
     );
 
-    @POST("yyzzj/print/submit")
+    @POST("photo/print/submit")
     Observable<HttpResult<Order>> printSubmit(
             @Body JSONObject body
     );
@@ -202,7 +202,7 @@ public interface PhotoApi {
     Observable<HttpResult<AlertBean>> getAlert(
     );
 
-    @GET("yyzzj/preview/status")
+    @GET("photo/preview/status")
     Observable<HttpResult<Object>> getPreviewStatus(
 
     );

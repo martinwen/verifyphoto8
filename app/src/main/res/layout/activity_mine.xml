@@ -38,32 +38,6 @@
             android:layout_height="wrap_content">
 
             <LinearLayout
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_centerHorizontal="true"
-                android:layout_marginTop="24dp"
-                android:gravity="center_horizontal"
-                android:orientation="vertical">
-
-                <com.facebook.drawee.view.SimpleDraweeView
-                    android:id="@+id/mine_user_head"
-                    android:layout_width="84dp"
-                    android:layout_height="84dp"
-                    fresco:actualImageScaleType="centerCrop"
-                    fresco:roundAsCircle="true"
-                    fresco:roundingBorderColor="@color/white"
-                    fresco:roundingBorderWidth="5dp" />
-
-                <TextView
-                    android:id="@+id/mine_nickname"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginTop="15dp"
-                    android:textColor="@color/black"
-                    android:textSize="21sp" />
-            </LinearLayout>
-
-            <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:orientation="vertical"
@@ -201,6 +175,32 @@
                         android:src="@mipmap/mine_right_arrow" />
                 </LinearLayout>
 
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="24dp"
+                android:gravity="center_horizontal"
+                android:orientation="vertical">
+
+                <com.facebook.drawee.view.SimpleDraweeView
+                    android:id="@+id/mine_user_head"
+                    android:layout_width="84dp"
+                    android:layout_height="84dp"
+                    fresco:actualImageScaleType="centerCrop"
+                    fresco:roundAsCircle="true"
+                    fresco:roundingBorderColor="@color/white"
+                    fresco:roundingBorderWidth="5dp" />
+
+                <TextView
+                    android:id="@+id/mine_nickname"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="15dp"
+                    android:textColor="@color/black"
+                    android:textSize="21sp" />
             </LinearLayout>
 
         </RelativeLayout>

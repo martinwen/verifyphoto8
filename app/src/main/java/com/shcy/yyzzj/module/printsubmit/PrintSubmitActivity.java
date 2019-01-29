@@ -246,10 +246,10 @@ public class PrintSubmitActivity extends Activity implements View.OnClickListene
                 intent3.putExtra(URL, Constants.EXPRESS_DETAIL_URL);
                 startActivity(intent3);
                 break;
-            case R.id.printpay_pay_success_tomianpage:
+            case R.id.submit_pay_success_tomianpage:
                 finish();
                 break;
-            case R.id.printpay_pay_success_vieworder:
+            case R.id.submit_pay_success_vieworder:
                 finish();
                 Intent intent = new Intent(this, OrderDetailActivity.class);
                 intent.putExtra(ORDER, order);

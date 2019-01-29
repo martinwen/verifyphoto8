@@ -290,8 +290,8 @@
     public static ** valueOf(java.lang.String);
 }
 
--keep class shcy.photo.bean.**{ *; }
--keep class shcy.photo.config.**{ *; }
+-keep class com.shcy.yyzzj.bean.**{ *; }
+-keep class com.shcy.yyzzj.config.**{ *; }
 
 -ignorewarning                 # 是否忽略检测，（是）
 -optimizationpasses 5          # 指定代码的压缩级别

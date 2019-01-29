@@ -70,7 +70,8 @@ public class OrderDetailActivity extends Activity implements OnClickListener, Or
     private ImageView back;
     private TextView saveSuccess, title, photoName, photoIns, orderNum, createTime, payTime, refundTime, amout1, amount2, payStatus1, copyExpressNum,
             payStatus2, name, mobile, address, button, buttonPrint, printcount, includecount, expresscompany,
-            expressnumber, paySuccessAmout, paySuccessOrderNum, paySuccessTime, viewOrder, toMainpage;
+            expressnumber, paySuccessAmout, paySuccessOrderNum, paySuccessTime, viewOrder, toMainpage,
+            orderNumCopy;
     private RelativeLayout paytimeLayout, refundtimeLayout, amoutLayout1, amoutLayout2, expresscompanyLayout, expressnumberLayout;
     private LinearLayout addressLayout, printcountLayout, savetoWx, paySuccessLayout, orderDetailLayout;
     private SimpleDraweeView photo;
@@ -125,12 +126,14 @@ public class OrderDetailActivity extends Activity implements OnClickListener, Or
         expressnumberLayout = findViewById(R.id.order_detail_expressnumber_layout);
         copyExpressNum = findViewById(R.id.order_detail_copy);
         savetoWx = findViewById(R.id.orderdetail_saveto_wx);
+        orderNumCopy = findViewById(R.id.order_ordernum_copy);
 
         back.setOnClickListener(this);
         button.setOnClickListener(this);
         buttonPrint.setOnClickListener(this);
         copyExpressNum.setOnClickListener(this);
         savetoWx.setOnClickListener(this);
+        orderNumCopy.setOnClickListener(this);
 
         imageDialog = new ImageDialog(this);
 
@@ -240,15 +243,21 @@ public class OrderDetailActivity extends Activity implements OnClickListener, Or
                         })
                         .share();
                 break;
-            case R.id.printpay_pay_success_tomianpage:
+            case R.id.submit_pay_success_tomianpage:
                 Intent intent1 = new Intent();
                 intent1.setAction(BaseActivity.CLOSEACTIVITY_ACTION);
                 sendBroadcast(intent1);
                 finish();
                 break;
-            case R.id.printpay_pay_success_vieworder:
+            case R.id.submit_pay_success_vieworder:
                 orderDetailLayout.setVisibility(View.VISIBLE);
                 paySuccessLayout.setVisibility(View.GONE);
+                break;
+            case R.id.order_ordernum_copy:
+                ClipboardManager cm1 = (ClipboardManager) getSystemService(Context.CLIPBOARD_SERVICE);
+                // 将文本内容放到系统剪贴板里。
+                cm1.setText(orderNum.getText().toString().trim());
+                ToastUtil.showToast("复制成功");
                 break;
         }
     }
@@ -309,7 +318,6 @@ public class OrderDetailActivity extends Activity implements OnClickListener, Or
             case 20://支付成功
                 title.setText("支付成功");
                 if (order.getType() == 1) {
-                    button.setBackgroundResource(R.mipmap.gradual_circle_back_small);
                     button.setVisibility(View.VISIBLE);
                     button.setText("下载照片");
                     buttonPrint.setVisibility(View.VISIBLE);
@@ -394,6 +402,7 @@ public class OrderDetailActivity extends Activity implements OnClickListener, Or
                     }
                 }, 1000);
             } else {
+                saveSuccess.setVisibility(View.GONE);
                 MobclickAgent.onEvent(this, Constants.EVENT_PRINT_PAYSUECCESS);
             }
         } else {

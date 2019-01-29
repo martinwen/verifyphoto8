@@ -19,7 +19,7 @@
         android:protectionLevel="signature" />
 
     <!-- Required  一些系统要求的权限，如访问网络等 -->
-    <uses-permission android:name="com.com.shcy.yyzzj.permission.JPUSH_MESSAGE" />
+    <uses-permission android:name="com.shcy.yyzzj.permission.JPUSH_MESSAGE" />
     <uses-permission android:name="android.permission.RECEIVE_USER_PRESENT" />
     <uses-permission android:name="android.permission.INTERNET" />
     <uses-permission android:name="android.permission.READ_PHONE_STATE" />
@@ -169,7 +169,7 @@
 
         <meta-data
             android:name="UMENG_APPKEY"
-            android:value="5bc47d3df1f5568b62000176" />
+            android:value="5c496941b465f5898d000560" />
         <meta-data
             android:name="UMENG_CHANNEL"
             android:value="${UMENG_CHANNEL_VALUE}" />
@@ -292,7 +292,7 @@
             android:value="developer-default" />
         <meta-data
             android:name="JPUSH_APPKEY"
-            android:value="56b2d6893e291025b946db08" /> <!-- </>值来自开发者平台取得的AppKey -->
+            android:value="8d61c0c6fd659b7636768410" /> <!-- </>值来自开发者平台取得的AppKey -->
 
         <activity
             android:name="com.tencent.tauth.AuthActivity"

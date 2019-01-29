@@ -55,7 +55,7 @@
         android:id="@+id/camera_top_layout"
         android:layout_width="match_parent"
         android:layout_height="50dp"
-        android:background="@color/black"
+        android:background="#FCB8DF"
         android:gravity="center_vertical"
         android:orientation="horizontal">
 

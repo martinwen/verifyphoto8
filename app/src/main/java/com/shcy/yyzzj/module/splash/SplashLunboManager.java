@@ -61,15 +61,15 @@ public class SplashLunboManager implements ViewPager.OnPageChangeListener, View.
             case 0:
                 point1.setBackground(mContext.getResources().getDrawable(R.drawable.guide_point_back_select));
                 point2.setBackground(mContext.getResources().getDrawable(R.drawable.guide_point_back));
-                pointLayout.setVisibility(View.VISIBLE);
+//                pointLayout.setVisibility(View.VISIBLE);
                 break;
             case 1:
                 point1.setBackground(mContext.getResources().getDrawable(R.drawable.guide_point_back));
                 point2.setBackground(mContext.getResources().getDrawable(R.drawable.guide_point_back_select));
-                pointLayout.setVisibility(View.VISIBLE);
+//                pointLayout.setVisibility(View.VISIBLE);
                 break;
             case 2:
-                pointLayout.setVisibility(View.GONE);
+//                pointLayout.setVisibility(View.GONE);
                 break;
         }
     }
